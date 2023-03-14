@@ -15,6 +15,7 @@ export const router = createBrowserRouter ([{
                     {
                         path: '/dashboardAdmin',
                         element: <DashboardAdmin />,
+                        loader: loaderAdvertisement,
                        
                     },  
                     {
@@ -24,6 +25,7 @@ export const router = createBrowserRouter ([{
                     {
                         path: '/expdetail/:id',
                         element: <ExpDetail />,
+                        loader: loaderPost
                         
                     }, 
                 ]
@@ -32,4 +34,13 @@ export const router = createBrowserRouter ([{
         ]
 
 ) 
+async function loaderPost  ({ params })  {
+    const post = await productHandler.loadProduct(params.id)  
+    return { post };
+};
+
+async function loaderAdvertisement () {
+ const products = await productHandler.loadProducts()
+    return { products };
+ };
 
