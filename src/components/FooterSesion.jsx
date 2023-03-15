@@ -1,5 +1,5 @@
 import React from 'react'
-import "./Footer.css"
+import "./FooterSesion.css"
 import Nav from 'react-bootstrap/Nav';
 import { Link } from 'react-router-dom'
 import facebook from '../assets/facebook.png'
@@ -8,7 +8,7 @@ import twitter from '../assets/twitter.png'
 
 
 
-function Footer ()  {
+function FooterSesion ()  {
 
   return (
     <Nav className='footer'
@@ -18,12 +18,15 @@ function Footer ()  {
         <Link className='footer-text' to='/'>© Art&Enjoy 2023 Spain S.L.</Link>
       </Nav.Item>
       <Nav.Item>
-        <Link className='footer-text' to='/CookiesPolicy' href="#CookiesPolicy">Política de privacidad de las Cookies</Link>
+        <Link className='footer-text' to='/CookiesPolicy' href="#CookiesPolicy">Política de privacidad</Link>
       </Nav.Item>
       <Nav.Item>
-        <Link  className='footer-text' to='/AboutUs' href="#AboutUs"> ¿Quienes somos?</Link>
+        <Link  className='footer-text' to='/AboutUs' href="#AboutUs">Contacto</Link>
       </Nav.Item> 
-      
+      <Nav.Item>
+        <Link  className='footer-text' to='/Questions' href="#Questions">Preguntas frecuentes</Link>
+      </Nav.Item>
+  
        <Nav.Item>
         <Link className='footer-text' > <img src={facebook} alt="ArtEnjoy"className='socialmedia'/>       
         </Link>
@@ -40,4 +43,4 @@ function Footer ()  {
   
  );
 }
-export default Footer;
+export default FooterSesion;
