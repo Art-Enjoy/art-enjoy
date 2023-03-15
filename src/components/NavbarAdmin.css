@@ -1,0 +1,26 @@
+.Logo{
+    width: 8vw !important;
+    padding-right: 20px;
+      
+  }
+  
+  .navigation{
+    background-color: rgba(233, 220, 116, 1) !important;
+    
+    
+  }
+  
+  .text-navbar{
+    color: #080808 !important;
+    margin-inline-start: .3125rem;
+    margin-left: 20vh;
+    text-decoration: none;
+  }
+  
+  #responsive-navbar-nav{
+    color: #74522B !important;
+    
+  }
+  
+  
+  

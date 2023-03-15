@@ -1,7 +1,8 @@
 import React,{ useState } from "react";
-
+ import "bootstrap/dist/css/bootstrap.min.css";
 import "./DashboardAdmin.css";
 import Button from "react-bootstrap/Button";
+
 import Card from "react-bootstrap/Card";
 import { Link, useLoaderData } from "react-router-dom";
 import { productHandler } from "../handler/productHandler";
@@ -20,23 +21,25 @@ function DashboardAdmin() {
   const data = productsData.filter(
     (product) =>
       product.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      product.price.toLowerCase().includes(searchQuery.toLowerCase())
+      product.price.toLowerCase().includes(searchQuery.toLowerCase())||
+      product.location.toLowerCase().includes(searchQuery.toLowerCase())
+
   );
   const deleteProduct = async (id) => {
     await productHandler.deleteProduct(id);
-    setProductsData(productsData.filter(post => post.id !== id))
+    setProductsData(productsData.filter(exp => exp.id !== id))
 }
 
 
   return (
     <div className="container-gn" id="text">
-      <h1>Welcome to your Dahsboard Majealcero</h1>
+      <h1>Bienvenido a tu panel de experiencias</h1>
     <>
       <div className="container-bar">
         <input
           className="searchStyle"
           type="text"
-          placeholder="🔍 Search by product or price"
+          placeholder="🔍 Buscar por experiencia o localización"
           value={searchQuery}
           onChange={handleSearchChange}
         />
@@ -50,7 +53,7 @@ function DashboardAdmin() {
                 <Card.Title>{product.title}</Card.Title>
                 <Card.Title>{product.price}</Card.Title>
                 <Card.Text>{product.location}</Card.Text>
-                <Link to={`/advertisement/${product.id}`}>
+                <Link to={`/expdetail/${product.id}`}>
                   <Button className="btn-ad" id="btn-edit">More information</Button>
                 </Link>
                 <Link to={`editProduct/${product.id}`}><Button className="btn-E" id="btn-edit">✏</Button></Link>
@@ -67,4 +70,3 @@ function DashboardAdmin() {
 }
 
 export default DashboardAdmin;
-

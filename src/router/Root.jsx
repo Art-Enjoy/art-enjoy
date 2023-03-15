@@ -1,12 +1,16 @@
 import { Outlet } from "react-router-dom";
 import NavbarAdmin from "../components/NavbarAdmin";
-import DashboardAdmin from "../pages/DashboardAdmin";
+
+import HomeUser from "../pages/HomeUser"
 function Root() {
     return (
         <>
             <NavbarAdmin />
-            <DashboardAdmin/>
+            <HomeUser/>
             <Outlet />
+
+            
+          
         </>
     )
 }

@@ -3,6 +3,8 @@ import { createBrowserRouter } from "react-router-dom";
 import ExpDetail from "../pages/ExpDetail"
 import DashboardAdmin from "../pages/DashboardAdmin"
 import AddExpAdmin from "../pages/AddExpAdmin"
+import { productHandler } from "../handler/productHandler";
+import EditProduct from "../pages/EditProduct"
 import Root from"./Root"
 
 
@@ -28,6 +30,11 @@ export const router = createBrowserRouter ([{
                         loader: loaderPost
                         
                     }, 
+                    {
+                        path: "/dashboardAdmin/editProduct/:id",
+                        element: <EditProduct />,
+                        loader: loaderPost, 
+                    },
                 ]
 
             }
