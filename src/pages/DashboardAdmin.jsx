@@ -1,5 +1,5 @@
 import React,{ useState } from "react";
- import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 import "./DashboardAdmin.css";
 import Button from "react-bootstrap/Button";
 
@@ -54,7 +54,7 @@ function DashboardAdmin() {
                 <Card.Title>{product.price}</Card.Title>
                 <Card.Text>{product.location}</Card.Text>
                 <Link to={`/expdetail/${product.id}`}>
-                  <Button className="btn-ad" id="btn-edit">More information</Button>
+                  <Button className="btn-add" id="btn-edit">More information</Button>
                 </Link>
                 <Link to={`editProduct/${product.id}`}><Button className="btn-E" id="btn-edit">✏</Button></Link>
                <Button  className="btn-D" id="btn-edit" onClick={() =>deleteProduct(product.id)}>❌</Button>

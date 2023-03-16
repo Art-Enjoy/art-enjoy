@@ -6,6 +6,9 @@ import AddExpAdmin from "../pages/AddExpAdmin"
 import { productHandler } from "../handler/productHandler";
 import EditProduct from "../pages/EditProduct"
 import Root from"./Root"
+import LoginAdmin from "../pages/LoginAdmin";
+import Login from "../pages/Login";
+import SignIn from "../pages/SignIn";
 
 
 
@@ -35,6 +38,21 @@ export const router = createBrowserRouter ([{
                         element: <EditProduct />,
                         loader: loaderPost, 
                     },
+                     {
+                        path: "/admin",
+                        element: <LoginAdmin />,
+                        
+                    }, 
+                    {
+                        path: "/login",
+                        element: <Login />,
+                        
+                    }, 
+                    {
+                        path: "/signin",
+                        element: <SignIn />,
+                        
+                    }, 
                 ]
 
             }

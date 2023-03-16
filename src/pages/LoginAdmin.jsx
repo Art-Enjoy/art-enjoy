@@ -4,15 +4,15 @@ import "./LoginAdmin.css"
 
 import { Component } from 'react'
 import { Container } from 'react-bootstrap'
-export default class Login extends Component {
+export default class LoginAdmin extends Component {
   render() {
     return (
       <>
       <Container>
       <form>
-        <h3>Registro</h3>
+        
         <div className="mb-3">
-          <label>Email </label>
+          <label>Email</label>
           <input
             type="email"
             className="form-control"
@@ -28,27 +28,16 @@ export default class Login extends Component {
           />
         </div>
         <div className="mb-3">
-          <div className="custom-control custom-checkbox">
-            <input
-              type="checkbox"
-              className="custom-control-input"
-              id="customCheck1"
-            />
-            <label className="custom-control-label" htmlFor="customCheck1">
-              Recuerdame
-            </label>
-          </div>
+          
         </div>
         <div className="d-grid">
         <div class="col col-lg-2">
           <button type="submit" className="btn btn-dark">
-            Vamos
+            Entrar
           </button>
           </div>
         </div>
-        <p className="forgot-password text-right">
-          Olvidaste <a href="#">contraseña?</a>
-        </p>
+        
       </form>
       </Container>
       </>
