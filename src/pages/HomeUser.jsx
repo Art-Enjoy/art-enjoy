@@ -1,9 +1,10 @@
 import React from 'react'
+import Slide from '../components/Slide'
 
-const Home = () => {
+const HomeUser = () => {
   return (
-    <div>Home</div>
+    <Slide />
   )
 }
 
-export default Home
+export default HomeUser

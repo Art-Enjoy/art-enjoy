@@ -3,7 +3,7 @@ import "./Slide.css"
 
 const Slide = () => {
   return (
-    <div>Slide</div>
+    <h1>Slide</h1>
   )
 }
 
