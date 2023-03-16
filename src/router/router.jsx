@@ -11,8 +11,7 @@ import CookiesPolicy from "../pages/CookiesPolicy";
 import Contact from "../pages/Contact";
 import Questions from "../pages/Questions";
 import AboutUs from "../pages/AboutUs";
-import HomeUser from "../pages/HomeUser"
-import Root from "./Root"
+
 
 
 
