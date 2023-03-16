@@ -6,7 +6,10 @@ import AddExpAdmin from "../pages/AddExpAdmin"
 import { productHandler } from "../handler/productHandler";
 import EditProduct from "../pages/EditProduct"
 import Root from"./Root"
-
+import CookiesPolicy from "../pages/CookiesPolicy";
+import Contact from "../pages/Contact";
+import Questions from "../pages/Questions";
+import AboutUs from "../pages/AboutUs";
 
 
 export const router = createBrowserRouter ([{
@@ -35,6 +38,23 @@ export const router = createBrowserRouter ([{
                         element: <EditProduct />,
                         loader: loaderPost, 
                     },
+                    {
+                        path: "/cookiespolicy/",
+                        element: <CookiesPolicy />,
+                    },
+                    {
+                        path: "/contact/",
+                        element: <Contact />,
+                    },
+                    {
+                        path: "/questions/",
+                        element: <Questions />,
+                    },
+                    {
+                        path: "/aboutus/",
+                        element: <AboutUs />,
+                    }
+                    
                 ]
 
             }
@@ -49,5 +69,5 @@ async function loaderPost  ({ params })  {
 async function loaderAdvertisement () {
  const products = await productHandler.loadProducts()
     return { products };
- };
+};
 

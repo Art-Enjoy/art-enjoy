@@ -8,6 +8,7 @@ import twitter from '../assets/twitter.png'
 
 
 
+
 function Footer ()  {
 
   return (
@@ -18,13 +19,13 @@ function Footer ()  {
         <Link className='footer-text' to='/'>© Art&Enjoy 2023 Spain S.L.</Link>
       </Nav.Item>
       <Nav.Item>
-        <Link className='footer-text' to='/CookiesPolicy' href="#CookiesPolicy">Política de privacidad</Link>
+        <Link className='footer-text' to='/CookiesPolicy' href="#CookiesPolicy">P. privacidad y cookies</Link>
       </Nav.Item>
       <Nav.Item>
-        <Link  className='footer-text' to='/AboutUs' href="#AboutUs">Contacto</Link>
+        <Link  className='footer-text' to='/Contact' href="#Contact">Contacto</Link>
       </Nav.Item> 
       <Nav.Item>
-        <Link  className='footer-text' to='/Questions' href="#Questions">Preguntas frecuentes</Link>
+        <Link  className='footer-text' to='/questions' href="#Questions">Preguntas frecuentes</Link>
       </Nav.Item>
   
        <Nav.Item>
