@@ -1,0 +1,42 @@
+.item{
+    height: 40rem;
+    min-width: 30rem;
+    padding: 1rem;
+}
+.item img{
+    height: 100%;
+    width: 100%;
+    pointer-events: none;
+    -moz-border-radius: .580rem;
+    -webkit-border-radius: .580rem;
+    border-radius: .580rem;
+    -khtml-border-radius: .580rem;
+    padding: .580rem;
+    background: #f4b557;    
+}
+.item:hover {
+   border-style:solid;
+   color: rgb(188, 159, 230);
+  border-width: 5px;
+ 
+}
+
+.slider{
+    display: flex;
+    cursor: grab;
+}
+.slider-container{
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+@media (max-width: 414px) {
+    .slider{
+        margin-top: 0;
+    }
+  }
+
+  @media (max-width: 375px) {
+    .slider{
+        margin-top: 0;
+    }
+  }
