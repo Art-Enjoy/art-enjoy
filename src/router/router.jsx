@@ -7,16 +7,13 @@ import { productHandler } from "../handler/productHandler";
 import EditProduct from "../pages/EditProduct"
 import HomeUser from "../pages/HomeUser"
 import Root from"./Root"
-<<<<<<< HEAD
 import CookiesPolicy from "../pages/CookiesPolicy";
 import Contact from "../pages/Contact";
 import Questions from "../pages/Questions";
 import AboutUs from "../pages/AboutUs";
-=======
 import LoginAdmin from "../pages/LoginAdmin";
 import Login from "../pages/Login";
 import SignIn from "../pages/SignIn";
->>>>>>> feature/login-signin
 
 
 
@@ -50,7 +47,6 @@ export const router = createBrowserRouter([{
                         element: <EditProduct />,
                         loader: loaderPost, 
                     },
-<<<<<<< HEAD
                     {
                         path: "/cookiespolicy",
                         element: <CookiesPolicy />,
@@ -66,9 +62,8 @@ export const router = createBrowserRouter([{
                     {
                         path: "/aboutus",
                         element: <AboutUs />,
-                    }
+                    },
                     
-=======
                      {
                         path: "/admin",
                         element: <LoginAdmin />,
@@ -84,7 +79,6 @@ export const router = createBrowserRouter([{
                         element: <SignIn />,
                         
                     }, 
->>>>>>> feature/login-signin
                 ]
 }
 ]
