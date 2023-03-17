@@ -19,10 +19,10 @@ function Footer ()  {
         <Link className='footer-text' to='/'>© Art&Enjoy 2023 Spain S.L.</Link>
       </Nav.Item>
       <Nav.Item>
-        <Link className='footer-text' to='/CookiesPolicy' href="#CookiesPolicy">P. privacidad y cookies</Link>
+        <Link className='footer-text' to='/cookiespolicy' href="#CookiesPolicy">P. privacidad y cookies</Link>
       </Nav.Item>
       <Nav.Item>
-        <Link  className='footer-text' to='/Contact' href="#Contact">Contacto</Link>
+        <Link  className='footer-text' to='/contact' href="#Contact">Contacto</Link>
       </Nav.Item> 
       <Nav.Item>
         <Link  className='footer-text' to='/questions' href="#Questions">Preguntas frecuentes</Link>

@@ -45,53 +45,23 @@ export const router = createBrowserRouter([{
                         loader: loaderPost, 
                     },
                     {
-                        path: "/cookiespolicy/",
+                        path: "/cookiespolicy",
                         element: <CookiesPolicy />,
                     },
                     {
-                        path: "/contact/",
+                        path: "/contact",
                         element: <Contact />,
                     },
                     {
-                        path: "/questions/",
+                        path: "/questions",
                         element: <Questions />,
                     },
                     {
-                        path: "/aboutus/",
+                        path: "/aboutus",
                         element: <AboutUs />,
                     }
                     
-                ],
-    element: < Root />,
-    children: [
-        {
-            path: '/User',
-            element: <HomeUser />,
-
-        },
-        {
-            path: '/dashboardAdmin',
-            element: <DashboardAdmin />,
-            loader: loaderAdvertisement,
-
-        },
-        {
-            path: '/addexpadmin',
-            element: <AddExpAdmin />,
-        },
-        {
-            path: '/expdetail/:id',
-            element: <ExpDetail />,
-            loader: loaderPost
-
-        },
-        {
-            path: "/dashboardAdmin/editProduct/:id",
-            element: <EditProduct />,
-            loader: loaderPost,
-        },
-    ]
-
+                ]
 }
 ]
 
