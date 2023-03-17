@@ -6,12 +6,18 @@ import AddExpAdmin from "../pages/AddExpAdmin"
 import { productHandler } from "../handler/productHandler";
 import EditProduct from "../pages/EditProduct"
 import HomeUser from "../pages/HomeUser"
-import Root from "./Root"
+import Root from"./Root"
+import CookiesPolicy from "../pages/CookiesPolicy";
+import Contact from "../pages/Contact";
+import Questions from "../pages/Questions";
+import AboutUs from "../pages/AboutUs";
+
 
 
 
 export const router = createBrowserRouter([{
     path: '/',
+<<<<<<< HEAD
     element: < Root />,
     children: [
         {
@@ -42,6 +48,53 @@ export const router = createBrowserRouter([{
         },
     ]
 
+=======
+        element: < Root />, 
+        children: [
+                    {
+                    path: '/User',
+                    element: <HomeUser />,
+                    },
+                    {
+                        path: '/dashboardAdmin',
+                        element: <DashboardAdmin />,
+                        loader: loaderAdvertisement,
+                       
+                    },  
+                    {
+                        path: '/addexpadmin',
+                        element: <AddExpAdmin />,
+                    },  
+                    {
+                        path: '/expdetail/:id',
+                        element: <ExpDetail />,
+                        loader: loaderPost
+                        
+                    }, 
+                    {
+                        path: "/dashboardAdmin/editProduct/:id",
+                        element: <EditProduct />,
+                        loader: loaderPost, 
+                    },
+                    {
+                        path: "/cookiespolicy",
+                        element: <CookiesPolicy />,
+                    },
+                    {
+                        path: "/contact",
+                        element: <Contact />,
+                    },
+                    {
+                        path: "/questions",
+                        element: <Questions />,
+                    },
+                    {
+                        path: "/aboutus",
+                        element: <AboutUs />,
+                    }
+                    
+                ]
+>>>>>>> 169f4eb3f934daffdec970da973c7de8ed06da0d
 }
 ]
 

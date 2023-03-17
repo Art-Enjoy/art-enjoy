@@ -6,6 +6,7 @@ import { motion } from 'framer-motion'
 
 const Slide = () => {
   return (
+<<<<<<< HEAD
     
       <motion.div className='slider-container'>
           <motion.div className='slider' drag='x' 
@@ -22,6 +23,10 @@ const Slide = () => {
           
       </motion.div>
     
+=======
+    <h1>Slide</h1>
+      /*<div>Slide</div>*/
+>>>>>>> 169f4eb3f934daffdec970da973c7de8ed06da0d
   )
 }
 

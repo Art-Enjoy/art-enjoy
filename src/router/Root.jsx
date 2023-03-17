@@ -1,5 +1,6 @@
 import { Outlet } from "react-router-dom";
 import NavbarAdmin from "../components/NavbarAdmin";
+import Footer from "../components/Footer";
 
 
 function Root() {
@@ -8,6 +9,8 @@ function Root() {
             <NavbarAdmin />
             
             <Outlet />
+            <Footer />
+            
 
             
           

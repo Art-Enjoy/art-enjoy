@@ -1,0 +1,14 @@
+.text-container-cookies{
+    background-color: rgba(145, 166, 240, 1);
+    color: #000000;
+}
+
+#title-cookies{
+    color:#fffdfd;
+    text-align: center;
+    padding-top: 3vh;
+}
+
+.text-cookies{
+    padding: 2vh;
+}

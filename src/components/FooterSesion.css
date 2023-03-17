@@ -1,0 +1,33 @@
+.footer-text{
+    color:rgba(233, 220, 116, 1) !important;
+    font-size: 1.125rem;
+    margin-left: 1.875rem;
+    text-decoration: none;
+   
+    
+}
+
+.footer{
+    
+    margin-top: 1vh;
+}
+
+.socialmedia {
+    width: 1.5625rem; 
+    margin-left: .625rem;
+    
+        
+}
+
+@media (max-width: 420px) {
+    .socialmedia {
+        width: 1.5625rem; 
+        margin-left: .125rem;
+}
+.footer-text{
+    color:rgba(233, 220, 116, 1) !important;
+    font-size: 1.125rem;
+    margin-left: .4375rem;
+    text-decoration: none;
+}
+}
