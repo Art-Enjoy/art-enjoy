@@ -17,39 +17,7 @@ import AboutUs from "../pages/AboutUs";
 
 export const router = createBrowserRouter([{
     path: '/',
-<<<<<<< HEAD
-    element: < Root />,
-    children: [
-        {
-            path: '/HomeUser',
-            element: <HomeUser />,
-
-        },
-        {
-            path: '/dashboardAdmin',
-            element: <DashboardAdmin />,
-            loader: loaderAdvertisement,
-
-        },
-        {
-            path: '/addexpadmin',
-            element: <AddExpAdmin />,
-        },
-        {
-            path: '/expdetail/:id',
-            element: <ExpDetail />,
-            loader: loaderPost
-
-        },
-        {
-            path: "/dashboardAdmin/editProduct/:id",
-            element: <EditProduct />,
-            loader: loaderPost,
-        },
-    ]
-
-=======
-        element: < Root />, 
+       element: < Root />, 
         children: [
                     {
                     path: '/User',
@@ -94,7 +62,6 @@ export const router = createBrowserRouter([{
                     }
                     
                 ]
->>>>>>> 169f4eb3f934daffdec970da973c7de8ed06da0d
 }
 ]
 
