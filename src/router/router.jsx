@@ -11,6 +11,7 @@ import CookiesPolicy from "../pages/CookiesPolicy";
 import Contact from "../pages/Contact";
 import Questions from "../pages/Questions";
 import AboutUs from "../pages/AboutUs";
+import FormsUser from "../pages/FormsUser"
 
 
 
@@ -59,7 +60,11 @@ export const router = createBrowserRouter([{
                     {
                         path: "/aboutus",
                         element: <AboutUs />,
-                    }
+                    },
+                    {
+                        path: '/formsUser',
+                        element: <FormsUser />,
+                    },  
                     
                 ]
 }
