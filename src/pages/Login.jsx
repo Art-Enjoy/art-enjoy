@@ -1,6 +1,6 @@
 import React from 'react'
 /* import { Container } from 'react-bootstrap' */
-import "./LoginAdmin.css"
+
 
 import { Component } from 'react'
 import { Container } from 'react-bootstrap'

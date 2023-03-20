@@ -3,7 +3,7 @@ import "./Slogan.css"
 
 const Slogan = () => {
   return (
-    <div>Slogan</div>
+    <section><h1 className="slogan">Disfrutar nunca fue tan fácil</h1></section>
   )
 }
 

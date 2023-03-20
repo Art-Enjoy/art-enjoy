@@ -18,12 +18,11 @@ return (
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">  
           <Nav className="">
-            <NavLink  to='/' className='text-navbar' href="#home">Experiencias</NavLink>
+            <NavLink  to='/' className='text-navbar' href="#home">Todas nuestras experiencias</NavLink>
                 
+            <NavLink className='text-navbar' to="/form" href="#Post">Buscar</NavLink>
                 
             <NavLink className='text-navbar' to="/advertisement" href="#form">¿Qué es Art&enjoy? </NavLink>
-
-            <NavLink className='text-navbar' to="/login" href="#Post">Ingresar</NavLink>
                 
           </Nav>
           </Navbar.Collapse>

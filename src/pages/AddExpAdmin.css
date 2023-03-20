@@ -1,20 +1,21 @@
 form{
-    background-color: rgba(244, 144, 87, 1) !important;
-    width: 60vw;
-    align-items: center;
+     background-color: rgb(248, 166, 118) !important; 
+    width: 70vw;
+    border-radius: 20px;
+    flex-direction: column;
+    display: flex;
     justify-content: center;
     padding: 5vh;
     margin: 5vh;
-    border-radius: 5vh;
-    color: white;
+    color:rgb(0, 0, 0)
 }
 
-.form-control-1{
-background-color: white;
+.form-control{
+background-color: rgb(205, 244, 158);
 border-radius: 1.25rem;
   border: 0;
-  width: 40vw;
-  color: black;
+  width: 50vw;
+  color: rgb(10, 10, 10);
   padding: .3125rem;
   position: sticky;
   top: .3125rem;
@@ -23,30 +24,25 @@ border-radius: 1.25rem;
 
 
 #btn-ad{
-    background-color: #80C5F6;
+    background-color: #90f680;
     color: black;
     border-style: none;
+    width: 200px;
+    margin-left: 15.625rem;
+    
 }
 
 #btn-ad:hover{
 color: white;
-background-color: #80C5F6;
+background-color: #af80f6;
 box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
 }
 .container-form{
     display: flex;
     justify-content: center;
-    background-color: #080808;
-   
     
+       
 }
-
-.form-control{
-    width: 50vw;
-    display: flex;
-
-}
-
 
 #input-description{
 height: 20vh;

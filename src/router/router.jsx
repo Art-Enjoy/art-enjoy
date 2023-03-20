@@ -23,7 +23,7 @@ export const router = createBrowserRouter([{
        element: < Root />, 
         children: [
                     {
-                    path: '/User',
+                    path: '/',
                     element: <HomeUser />,
                     },
                     {
@@ -39,13 +39,13 @@ export const router = createBrowserRouter([{
                     {
                         path: '/expdetail/:id',
                         element: <ExpDetail />,
-                        loader: loaderPost
+                        loader: loaderexp
                         
                     }, 
                     {
                         path: "/dashboardAdmin/editProduct/:id",
                         element: <EditProduct />,
-                        loader: loaderPost, 
+                        loader: loaderexp, 
                     },
                     {
                         path: "/cookiespolicy",
@@ -84,9 +84,9 @@ export const router = createBrowserRouter([{
 ]
 
 )
-async function loaderPost({ params }) {
-    const post = await productHandler.loadProduct(params.id)
-    return { post };
+async function loaderexp({ params }) {
+    const exp = await productHandler.loadProduct(params.id)
+    return { exp };
 };
 
 async function loaderAdvertisement() {

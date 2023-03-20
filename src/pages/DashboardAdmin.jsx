@@ -48,14 +48,14 @@ function DashboardAdmin() {
         {data.map((product) => {
           return (
             <div key={product.id} className="card" style={{ width: '18rem' }}>
-              <Card.Img variant="top"className="img-size" src={product.img} />
+              <Link to={`/expdetail/${product.id}`}><Card.Img variant="top"className="img-size" src={product.img} /></Link>
               <Card.Body>
                 <Card.Title>{product.title}</Card.Title>
                 <Card.Title>{product.price}</Card.Title>
                 <Card.Text>{product.location}</Card.Text>
-                <Link to={`/expdetail/${product.id}`}>
+                {/* <Link to={`/expdetail/${product.id}`}>
                   <Button className="btn-add" id="btn-edit">More information</Button>
-                </Link>
+                </Link> */}
                 <Link to={`editProduct/${product.id}`}><Button className="btn-E" id="btn-edit">✏</Button></Link>
                <Button  className="btn-D" id="btn-edit" onClick={() =>deleteProduct(product.id)}>❌</Button>
                

@@ -32,7 +32,7 @@ export const productService = {
         return product;
     },
     async submitProduct(newProduct){
-        await apiClient.post("/", newProduct)
+        await apiClient.exp("/", newProduct)
     },
     async deleteProduct(id){
         await apiClient.delete("/" + id)

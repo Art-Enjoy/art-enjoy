@@ -5,23 +5,22 @@ import './ExpDetail.css';
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const ExpDetail = () => {
-  const { post } = useLoaderData();
+  const { exp } = useLoaderData();
 
   return (
   <section className="general-container">
-    <div id="div-post" className="container-ads d-flex">
-      <img className="img-fluid " id="img-ad" src={post.img} alt="imagen" />
+    <div id="div-exp" className="container-ads d-flex">
+      <img className="img-fluid " id="img-ad" src={exp.img} alt="imagen" />
       <div className="ads p-2" id="container-text">
       
-        <h1 className="title-ad">{post.title}</h1>
-        <div className="ad-title d-flex justify-content-between">
-          <h3><img src={Location} id="logo-location"/>{post.location}</h3>
-          <h3 className="price"><img src={Price} id="price1"/>{post.price}</h3>
-          </div>            
-        
-          <h5 className="description">{post.description}</h5>
-          <h3 className="units">Units available: {post.units}</h3>
-          <h4 className="user"> Seller:{post.user}</h4>
+        <h1 className="title-ad">{exp.title}</h1>
+        <div className="ad-title">
+          <h4><img src={Location} id="logo-location"/>Ubicación:{exp.location}</h4>
+          <h5 className="description">Descripción:{exp.description}</h5>
+          <h3 className="price"><img src={Price} id="price1"/>Precio:{exp.price}</h3>
+          <h4 className="units">Entradas disponibles: {exp.units}</h4>
+          </div> 
+          
         
         
       </div>

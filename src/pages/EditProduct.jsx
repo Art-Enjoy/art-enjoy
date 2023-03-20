@@ -4,15 +4,15 @@ import { productHandler } from "../handler/productHandler";
 
 
 function EditProduct() {
-    const { post } = useLoaderData();
-    const id = post.id;
-    const [title, setTitle] = useState(post.title);
-    const [price, setPrice] = useState(post.price);
-    const [units, setUnits] = useState(post.units);
-    const [description, setDescription] = useState(post.description);
-    const [user, setUser] = useState(post.user);
-    const [location, setLocation] = useState(post.location);
-    const [img, setImg] = useState(post.img);
+    const { exp } = useLoaderData();
+    const id = exp.id;
+    const [title, setTitle] = useState(exp.title);
+    const [price, setPrice] = useState(exp.price);
+    const [units, setUnits] = useState(exp.units);
+    const [description, setDescription] = useState(exp.description);
+   
+    const [location, setLocation] = useState(exp.location);
+    const [img, setImg] = useState(exp.img);
 
     const handleTitleChange = (event) => {
         let titleInput = event.target.value;
@@ -33,10 +33,7 @@ function EditProduct() {
         setUnits(unitsInput);
     };
 
-    const handleUserChange = (event) => {
-        let userInput = event.target.value;
-        setUser(userInput);
-    };
+   
 
     const handleLocationChange = (event) => {
         let locationInput = event.target.value;
@@ -54,7 +51,7 @@ function EditProduct() {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        let updatedProduct = { title, description, price, user, units, location, img };
+        let updatedProduct = { title, description, price, units, location, img };
         productHandler.updateProduct(id, updatedProduct);
         event.target.reset()
     };
@@ -62,38 +59,35 @@ function EditProduct() {
 
 
     return (
-        <><h1>Editando la experiencia: {post.title}</h1>
+        <><h1>Editando la experiencia: {exp.title}</h1>
             <div className="container-form">
 
                 <form onSubmit={handleSubmit} itemID="form1">
                    
                     <div className="mb-3">
                         <label htmlFor="title" className="form-label">Title</label>
-                        <input name="title" type="text" className="form-control" placeholder={post.title} onChange={handleTitleChange} />
+                        <input name="title" type="text" className="form-control" placeholder={exp.title} onChange={handleTitleChange} />
 
                     </div>
                     <div className="mb-3">
                         <label htmlFor="price" className="form-label">Price</label>
-                        <input name="price" type="text" className="form-control" placeholder={post.price} onChange={handlePriceChange} />
+                        <input name="price" type="text" className="form-control" placeholder={exp.price} onChange={handlePriceChange} />
                     </div>
 
                     <div className="mb-3">
                         <label className="form-label" htmlFor="description">Description</label>
-                        <input name="description" type="text" className="form-control" id="input-description" placeholder={post.description} onChange={handleDescriptionChange} />
+                        <input name="description" type="text" className="form-control" id="input-description" placeholder={exp.description} onChange={handleDescriptionChange} />
                     </div>
 
-                    <div className="mb-3">
-                        <label htmlFor="user" className="form-label">User</label>
-                        <input name="user" type="text" className="form-control" placeholder={post.user} onChange={handleUserChange} />
-                    </div>
+                
                     <div className="mb-3">
                         <label htmlFor="units" className="form-label">Units</label>
-                        <input name="units" type="number" className="form-control" placeholder={post.units} onChange={handleUnitsChange} />
+                        <input name="units" type="number" className="form-control" placeholder={exp.units} onChange={handleUnitsChange} />
                     </div>
 
                     <div className="mb-3">
                         <label htmlFor="location" className="form-label">Location</label>
-                        <input name="location" type="text" className="form-control" placeholder={post.location} onChange={handleLocationChange} />
+                        <input name="location" type="text" className="form-control" placeholder={exp.location} onChange={handleLocationChange} />
                     </div>
 
                     <div className="mb-3">

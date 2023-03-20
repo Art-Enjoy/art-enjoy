@@ -12,7 +12,7 @@ export const productHandler = {
             "price": newProduct.price,
             "description": newProduct.description,
             "units": newProduct.units,
-            "user": newProduct.user,
+            
             "location": newProduct.location,
              "img": newProduct.img,
         }
@@ -39,7 +39,7 @@ export const productHandler = {
             "price": updatedProduct.price,
             "description": updatedProduct.description,
             "units": updatedProduct.units,
-            "user": updatedProduct.user,
+            
             "location": updatedProduct.location,
            "img" : updatedProduct.img,
         }

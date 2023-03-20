@@ -8,8 +8,8 @@ const Advertisement = () => {
 
     return (
         <>
-        {productsData.map((post) => (
-            <DashboardAdmin key={post.id} post={post} deleteProduct={deleteProduct} />
+        {productsData.map((exp) => (
+            <DashboardAdmin key={exp.id} exp={exp} deleteProduct={deleteProduct} />
         ))}
       </>
     )
