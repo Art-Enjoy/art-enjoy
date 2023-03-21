@@ -2,6 +2,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import ExpDetail from "../pages/ExpDetail"
 import DashboardAdmin from "../pages/DashboardAdmin"
+import DashboardUser from "../pages/DashboardUser"
 import AddExpAdmin from "../pages/AddExpAdmin"
 import { productHandler } from "../handler/productHandler";
 import EditProduct from "../pages/EditProduct"
@@ -35,6 +36,7 @@ export const router = createBrowserRouter([{
                     {
                         path: '/addexpadmin',
                         element: <AddExpAdmin />,
+                        
                     },  
                     {
                         path: '/expdetail/:id',
@@ -79,6 +81,12 @@ export const router = createBrowserRouter([{
                         element: <SignIn />,
                         
                     }, 
+                    {
+                        path: '/dashboardUser',
+                        element: <DashboardUser />,
+                        loader: loaderAdvertisement,
+                       
+                    },  
                 ]
 }
 ]

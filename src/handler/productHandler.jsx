@@ -12,8 +12,7 @@ export const productHandler = {
             "price": newProduct.price,
             "description": newProduct.description,
             "units": newProduct.units,
-            
-            "location": newProduct.location,
+             "location": newProduct.location,
              "img": newProduct.img,
         }
 

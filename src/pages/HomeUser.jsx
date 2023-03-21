@@ -9,7 +9,7 @@ import Slide from '../components/Slide'
 
 const HomeUser = () => {
   return (
-    <><><><h1 className="descover">¿Cual será tu próxima experiencia? Reserva tus tikets y descúbrelo!</h1>
+    <><><><><h1 className="descover">¿Cual será tu próxima experiencia? Reserva tus tikets y descúbrelo!</h1>
       <Slide /></>
       <div className="titlee"><h1>Promociones</h1></div>
       <div className="container-promotions">
@@ -32,7 +32,7 @@ const HomeUser = () => {
               <div className="container-info">
                 <div className="info">
                   <p className="titulo">Museo Picaso Málaga</p>
-                  <span className="categoria">Todos los domingos del mes</span>
+                  <span className="categoria">Todos los domingos del mes de abril</span>
                 </div>
                 <div className="fondo"></div>
               </div>
@@ -44,9 +44,10 @@ const HomeUser = () => {
               <div className="container-info">
                 <div className="info">
                   <p className="titulo">Plaza España</p>
-                  <span className="categoria">Todos los días</span>
+                  <span className="categoria">Todos los días de junio a septiembre</span>
                 </div>
-                <div className="titlee">Ubicaciones</div>
+                <div className="fondo"></div>
+                
               </div>
             </div>
           </div>
@@ -55,6 +56,7 @@ const HomeUser = () => {
 
       </div></>
       <div className="titlee"><h1>Ubicaciones</h1></div></>
+      <p>hola</p></>
 
 
   

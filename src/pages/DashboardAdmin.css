@@ -25,29 +25,13 @@
   object-fit: cover;
 }
 
-.card:hover {
-    opacity: 0.8; 
-    cursor: pointer;
-    transform: scale(1.1);
-    box-shadow: 0 10 10px rgba(255, 255, 255, 0.787);
-} 
 
-
-
-  .btn-ad{
-    background-color: #039C7E;
-    color: white;
-    margin-top: 0%;
-    
-  }
-  .btn-ad:hover{
-    color: white;
-    background-color: #9243e7;
-    }
-
-  #btn-edit{
-    margin: .0938rem;
-  }
+.button-admin{
+  display: flex;
+  flex-direction: row;
+  padding-left: 9.375rem;
+  margin-top: -1.25rem;
+}
   .btn-E{
     background-color: rgb(112, 174, 83);
     border-style: none;
@@ -58,8 +42,6 @@
   }
 
 .container-gn{
-  background-color: #050505;
-  color: white;
   text-align: center;
  
   

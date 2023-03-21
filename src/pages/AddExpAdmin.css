@@ -23,7 +23,7 @@ border-radius: 1.25rem;
 }
 
 
-#btn-ad{
+#btn-add{
     background-color: #90f680;
     color: black;
     border-style: none;
@@ -32,7 +32,7 @@ border-radius: 1.25rem;
     
 }
 
-#btn-ad:hover{
+#btn-add:hover{
 color: white;
 background-color: #af80f6;
 box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
@@ -47,12 +47,23 @@ box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
 #input-description{
 height: 20vh;
 }
+.modal{
+    color: rgb(63, 142, 119);
+    
+}
+.modal-body{
+    color: #ec9e29;
+}
 
 
 @media (max-width: 600px){
 .form-control{
     width: 40vw;
     display: flex;
+
+}
+#btn-add{
+    margin-left: 20px;
 
 }
 
