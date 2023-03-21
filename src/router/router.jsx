@@ -14,6 +14,7 @@ import AboutUs from "../pages/AboutUs";
 import LoginAdmin from "../pages/LoginAdmin";
 import Login from "../pages/Login";
 import SignIn from "../pages/SignIn";
+import FormsUser from "../pages/FormsUser"
 
 
 
@@ -63,6 +64,10 @@ export const router = createBrowserRouter([{
                         path: "/aboutus",
                         element: <AboutUs />,
                     },
+                    {
+                        path: '/formsUser',
+                        element: <FormsUser />,
+                    },  
                     
                      {
                         path: "/admin",
