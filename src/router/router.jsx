@@ -1,6 +1,7 @@
 
 import { createBrowserRouter } from "react-router-dom";
 import ExpDetail from "../pages/ExpDetail"
+import ExpDetailUser from "../pages/ExpDetailUser"
 import DashboardAdmin from "../pages/DashboardAdmin"
 import DashboardUser from "../pages/DashboardUser"
 import AddExpAdmin from "../pages/AddExpAdmin"
@@ -42,6 +43,12 @@ export const router = createBrowserRouter([{
                     {
                         path: '/expdetail/:id',
                         element: <ExpDetail />,
+                        loader: loaderexp
+                        
+                    }, 
+                    {
+                        path: '/expdetailuser/:id',
+                        element: <ExpDetailUser />,
                         loader: loaderexp
                         
                     }, 

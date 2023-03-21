@@ -45,7 +45,7 @@ function DashboardUser() {
         {data.map((product) => {
           return (
             <div key={product.id} className="card" style={{ width: '18rem' }}>
-              <Link to={`/expdetail/${product.id}`}><Card.Img variant="top"className="img-size" src={product.img} /></Link>
+              <Link to={`/expdetailuser/${product.id}`}><Card.Img variant="top"className="img-size" src={product.img} /></Link>
               <Card.Body>
                 <Card.Title>{product.title}</Card.Title>
                 <Card.Text>{product.location}</Card.Text>
@@ -62,7 +62,7 @@ function DashboardUser() {
                 <label className="stars" for="radio1">★</label>
 
                 </p>
-                <Link to={`/expdetail/${product.id}`}>
+                <Link to={`/expdetailuser/${product.id}`}>
                   <Button className="btn-detail" >Detalles</Button>
                 </Link>
               </Card.Body>
