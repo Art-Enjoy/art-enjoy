@@ -3,7 +3,6 @@ import NavbarAdmin from "../components/NavbarAdmin";
 import Footer from "../components/Footer";
 import Slogan from"../components/Slogan"
 
-
 function Root() {
     return (
         <>
@@ -11,10 +10,7 @@ function Root() {
             <Slogan/>
             <Outlet />
             <Footer />
-            
-
-            
-          
+      
         </>
     )
 }
