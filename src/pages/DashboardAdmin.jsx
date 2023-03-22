@@ -34,6 +34,7 @@ function DashboardAdmin() {
   return (
     <div className="container-gn" id="text">
       <h1>Bienvenido a tu panel de experiencias</h1>
+<<<<<<< HEAD
       <>
         <div className="container-bar">
           <input
@@ -55,18 +56,41 @@ function DashboardAdmin() {
                   <Card.Title>{product.price}</Card.Title>
                   <Card.Text>{product.location}</Card.Text>
                   {/* <Link to={`/expdetail/${product.id}`}>
+=======
+    <>
+      <div className="container-bar">
+        <input
+          className="searchStyle"
+          type="text"
+          placeholder="🔍 Buscar por experiencia o localización"
+          value={searchQuery}
+          onChange={handleSearchChange}
+        />
+      </div>
+      <div className="cards">
+        {data.map((product) => {
+          return (
+            <div key={product.id} className="card" style={{ width: '18rem' }}>
+              <Link to={`/expdetail/${product.id}`}>
+              <Card.Img variant="top"className="img-size" src={product.img} />
+              </Link>
+              <Card.Body>
+                <Card.Title>{product.title}</Card.Title>
+                <Card.Title>{product.price}</Card.Title>
+                <Card.Text>{product.location}</Card.Text>
+               {/*  <Link to={`/expdetail/${product.id}`}>
+>>>>>>> e48bbef258eaad94f99435b4693a001764fbffc9
                   <Button className="btn-add" id="btn-edit">More information</Button>
                 </Link> */}
-                  <div className="button-admin">
-                    <Link to={`editProduct/${product.id}`}><Button className="btn-E" id="btn-edit">✏</Button></Link>
-                    <Button className="btn-D" id="btn-delete" onClick={() => deleteProduct(product.id)}>❌</Button></div>
-
-                </Card.Body>
-              </div>
-            );
-          })}
-        </div>
-      </>
+                <Link to={`editProduct/${product.id}`}><Button className="btn-E" id="btn-edit">✏</Button></Link>
+               <Button  className="btn-D" id="btn-edit" onClick={() =>deleteProduct(product.id)}>❌</Button>
+               
+              </Card.Body>
+            </div>
+          );
+        })}
+      </div>
+    </>
     </div>
   );
 }
