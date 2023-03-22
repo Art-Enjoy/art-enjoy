@@ -14,9 +14,9 @@ const PromotionTarifa = () => {
 
                     <h1 className="title-add"></h1>
                     <div className="add-title">
-                        <h4><img src={Location} id="logo-location" />Ubicación:Cádiz</h4>
+                        <h4><img src={Location} id="logo-location" />Ubicación:Faro de trafalgar.Cádiz</h4>
                         <h5 className="description">
-                            Visita al faro de trafalgar
+                            
                             Cádiz al tratarse de una provincia con numerosos kilómetros de costa y con una larguísima historia, está repleta de faros.
                             Son atractivos turísticos vinculados, la mayoría, a la aventura y los piratas. Destacando entre ellos el Faro de trafalgar.Se alza sobre el Tómbolo de Trafalgar, patrimonio geológico andaluz y testigo privilegiado de algunas de las páginas más importantes y trágicas de la historia de España.
                             En la visita disfrutaremos de la puesta de sol mientras  el guía nos narra la historia del faro.</h5>

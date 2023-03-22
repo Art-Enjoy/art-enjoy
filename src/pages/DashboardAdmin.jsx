@@ -47,7 +47,7 @@ function DashboardAdmin() {
         <div className="cards">
           {data.map((product) => {
             return (
-              <div key={product.id} className="card" style={{ width: '18rem' }}>
+              <div key={product.id} className="card-dash" style={{ width: '18rem' }}>
                 <Link href="/expdetail/${product.id}" to={`/expdetail/${product.id}`} >
                   <Card.Img top width="100%" variant="top" src={product.img} className="img-size" /></Link>
                 <Card.Body>

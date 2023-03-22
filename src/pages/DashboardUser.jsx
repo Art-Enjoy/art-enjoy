@@ -1,6 +1,8 @@
 import React,{ useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./DashboardUser.css";
+import "./DashboardAdmin.css";
+
 import Button from "react-bootstrap/Button";
 
 import Card from "react-bootstrap/Card";
@@ -44,7 +46,7 @@ function DashboardUser() {
       <div className="cards">
         {data.map((product) => {
           return (
-            <div key={product.id} className="card" style={{ width: '18rem' }}>
+            <div key={product.id} className="card-dash" style={{ width: '18rem' }}>
               <Link to={`/expdetailuser/${product.id}`}><Card.Img variant="top"className="img-size" src={product.img} /></Link>
               <Card.Body>
                 <Card.Title>{product.title}</Card.Title>
