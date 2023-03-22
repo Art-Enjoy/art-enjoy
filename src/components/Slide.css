@@ -7,12 +7,12 @@
     height: 100%;
     width: 100%;
     pointer-events: none;
-    -moz-border-radius: .580rem;
-    -webkit-border-radius: .580rem;
-    border-radius: .580rem;
-    -khtml-border-radius: .580rem;
-    padding: .580rem;
-    background: #f4b557;    
+    -moz-border-radius: .480rem;
+    -webkit-border-radius: .480rem;
+    border-radius: .480rem;
+    -khtml-border-radius: .480rem;
+    padding: .480rem;
+    background: #41994a;    
 }
 .item:hover {
    border-style:solid;

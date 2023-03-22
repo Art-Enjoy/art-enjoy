@@ -18,9 +18,9 @@ return (
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">  
           <Nav className="">
-            <NavLink  to='/dashboardAdmin' className='text-navbar' href="#home">Tus experiencias</NavLink>
+            <NavLink  to='/dashboardAdmin' className='text-navbar' href="#home">Panel de experiencias</NavLink>
                 
-            <NavLink className='text-navbar' to="/form" href="#exp">Bienvenid@</NavLink>
+            <div className='text-navbar'>Bienvenid@</div>
                 
             <NavLink className='text-navbar' to='/addexpadmin' href="#form">Añadir actividad </NavLink>
             

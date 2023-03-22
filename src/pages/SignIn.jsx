@@ -38,7 +38,7 @@ export default function SignIn() {
                         controlId="formBasicCheckbox"
                       ></Form.Group>
                       <div className="d-grid">
-                        <Button variant="dark" type="submit">
+                        <Button id="btn" type="submit">
                           Registrar
                         </Button>
                       </div>

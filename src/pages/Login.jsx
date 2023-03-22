@@ -41,7 +41,7 @@ export default class Login extends Component {
         </div>
         <div className="d-grid">
         <div class="col col-lg-2">
-          <button type="submit" className="btn btn-dark">
+          <button type="submit" id="btn">
             Vamos
           </button>
           </div>

@@ -1,5 +1,4 @@
-
-.ad-title{
+.add-title {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -8,7 +7,8 @@
     margin-right: 2vh;
 
 }
-#container-text{
+
+#container-text {
     margin-left: 2vh;
     text-align: center;
     margin-top: 7vh;
@@ -16,27 +16,28 @@
 
 }
 
-#img-ad {
+#img-add {
     width: 30.875rem;
     height: 40rem;
     object-fit: cover;
     border-radius: 2vh;
-    margin-top: 4vh;
+    margin-bottom: 10px;
     margin-left: 4vw;
     -moz-border-radius: .580rem;
     -webkit-border-radius: .580rem;
     -khtml-border-radius: .580rem;
     padding: .580rem;
-    background: #f4b557;    
+    background: #f4b557;
 
 }
-#img-ad:hover {
-    border-style:solid;
+
+#img-add:hover {
+    border-style: solid;
     color: rgb(167, 113, 243);
-   border-width: 8px;
-   
-  
- }
+    border-width: 8px;
+
+
+}
 
 h4 {
     color: #f4f3f2;
@@ -44,7 +45,7 @@ h4 {
 
 .description {
     margin-top: 7vh;
-   margin-left: 2vh;
+    margin-left: 2vh;
     text-align: center;
     margin-right: 2vh;
     color: #f4f3f2;
@@ -62,6 +63,11 @@ h4 {
 .price {
     margin-top: 8vh;
     color: #f7f8f7;
+}
+
+.btn-buy {
+    margin-right: 13.75rem;
+    margin-top: 1.25rem;
 }
 
 

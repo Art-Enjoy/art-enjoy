@@ -50,7 +50,6 @@ const AddExpAdmin = () => {
     event.target.reset()
   };
   const [show, setShow] = useState(false);
-
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
@@ -90,7 +89,7 @@ const AddExpAdmin = () => {
           <input name="img" type="file" className="form-control" onChange={handleImgChange} required />
         </div>
 
-        <button type="submit" className="btn btn-primary" id="btn-add" onClick={handleShow}>Añadir</button>
+        <button type="submit" className="btn btn-primary" id="btn" onClick={handleShow}>Añadir</button>
 
         <Modal className="modal" show={show} onHide={handleClose}>
           <Modal.Header closeButton>

@@ -1,20 +1,24 @@
 .Logo{
     width: 8vw !important;
     padding-right: 20px;
+    margin-right: 20px;
+    
       
   }
   
   
   .navigation{
-    background-color: rgba(233, 220, 116, 1) !important;
+   background-image: url(https://static.vecteezy.com/system/resources/previews/006/413/042/non_2x/gradient-abstract-background-you-can-use-this-background-for-your-content-like-as-video-game-qoute-promotion-blogging-template-presentation-education-sports-card-banner-website-and-anymore-free-vector.jpg)!important;
+   
     
     
   }
   
   .text-navbar{
-    color: #080808 !important;
+    color: #030303 !important;
     margin-inline-start: .3125rem;
-    margin-left: 20vh;
+    margin-left: 28vh;
+    font-size: larger;
     text-decoration: none;
     
   }

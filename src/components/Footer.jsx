@@ -37,7 +37,7 @@ function Footer ()  {
         </Link>
       </Nav.Item> 
       <Nav.Item>
-        <Link className='footer-text' > <img src={twitter} alt="ArtEnjoy"className='socialmedia'/>       
+        <Link className='footer-text-tw' > <img src={twitter} alt="ArtEnjoy"className='socialmedia'/>       
         </Link>
       </Nav.Item> 
     </Nav>
