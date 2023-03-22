@@ -17,6 +17,9 @@ import LoginAdmin from "../pages/LoginAdmin";
 import Login from "../pages/Login";
 import SignIn from "../pages/SignIn";
 import FormsUser from "../pages/FormsUser"
+import PromotionEsp from "../pages/PromotionEsp";
+import PromotionTarifa from "../pages/PromotionTarifa";
+import PromotionMalg from "../pages/PromotionMalg";
 
 
 
@@ -98,7 +101,25 @@ export const router = createBrowserRouter([{
                         element: <DashboardUser />,
                         loader: loaderAdvertisement,
                        
-                    },  
+                    }, 
+                    {
+                        path: '/plazaespaña-sevilla',
+                        element: <PromotionEsp />,
+                        loader: loaderAdvertisement,
+                       
+                    },   
+                    {
+                        path:'/trafalgar-cadiz',
+                        element: <PromotionTarifa />,
+                        loader: loaderAdvertisement,
+                       
+                    },   
+                    {
+                        path: '/picasso-malaga',
+                        element: <PromotionMalg />,
+                        loader: loaderAdvertisement,
+                       
+                    },   
                 ]
 }
 ]

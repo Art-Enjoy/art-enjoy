@@ -1,6 +1,6 @@
 
 .container-card{
-   
+   margin-top: 30px;
 	display: flex;
 	max-width: 1300px;
 	margin: auto;
@@ -18,7 +18,7 @@
 .card{
 	max-width: 100%;
     height: 100%;
-	margin: 20px;
+	
 	border-radius: 6px;
 	overflow: hidden;
 	background:#f3cbf3;
@@ -34,10 +34,12 @@
 .card img{
 	width: 100%;
 	height: 210px;
+    
 }
 .card .contenido-card{
 	padding: 15px;
 	text-align: center;
+    
 }
 .card .contenido-card h3{
 	margin-bottom: 15px;
