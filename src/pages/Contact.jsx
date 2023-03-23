@@ -1,16 +1,26 @@
-import React from 'react'
+
 import Modal from 'react-bootstrap/Modal';
 import emailjs from '@emailjs/browser';
 import { useState } from 'react';
+import React, {useRef} from 'react';
 
 
 const Contact = () => {
-  const sendEmail = (event) => {
+  const refForm = useRef();
+  const handleSendEmail = (event) => {
     event.preventDefault();
+    console.log(refForm.current);
+   
 
-    emailjs.sendForm('service_wsx5be5', 'template_elc8e8z', event.target, 'QfCoRiJ6xRZS91jpl')
-      .then(response => console.log(response))
-      .catch(error => console.log(error))
+    const serviceId = "service_wsx5be5";
+    const templateId="template_elc8e8z";
+    
+    const apiKey= "xLIleqslrV4bp69fy";
+    
+    emailjs.sendForm(serviceId,templateId,refForm.current,apiKey)
+    .then(result => console.log(result.text))
+    .catch (error =>console.error(error))
+     
       
   }
 
@@ -22,8 +32,11 @@ const Contact = () => {
 
   return (
     <><><div className='div-form'>
-      <h1 className='title-form'>Contáctanos</h1>
-      <form className='form-mail' onSubmit={sendEmail}>
+      
+      <form className='form-mail' ref={refForm} onSubmit={handleSendEmail}>
+        <div clasName="header-contact">
+          <h2>Contáctanos</h2>
+          </div>
         <label>Name</label>
         <input type="text" name='user_name' />
         <hr />
