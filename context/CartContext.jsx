@@ -15,13 +15,13 @@
 
   const getProducts = async () => {
     await axios
-      .get("http://localhost:3000/products")
+      .get("https://localhost:7132/Product")
        .then(({ data }) => setProducts(data.products));
    };
 
    const getProductsCart = async () => {
      return await axios
-       .get("http://localhost:3000/products-cart")
+       .get("https://localhost:7132/Product")
       .then(({ data }) => setCartItems(data.productsCart))
       .catch((error) => console.error(error));
   };
@@ -34,7 +34,7 @@
   const addItemToCart = async (product) => {
      const { title, img, price,location } = product;
 
-     await axios.post("http://localhost:3000/products-cart", { title, img, price,location });
+     await axios.post("https://localhost:7132/Product", { title, img, price,location });
 
      getProducts();
      getProductsCart();
@@ -43,11 +43,11 @@
    const editItemToCart = async (id, query, amount) => {
      if (query === "del" && amount === 1) {
        await axios
-         .delete(`http://localhost:3000/products/${id}`)
+         .delete(`https://localhost:7132/Product/${id}`)
          .then(({ data }) => console.log(data));
      } else {
        await axios
-         .put(`http://localhost:3000/products/${id}?query=${query}`, {
+         .put(`https://localhost:7132/Product/${id}?query=${query}`, {
            amount,
          })
          .then(({ data }) => console.log(data));
