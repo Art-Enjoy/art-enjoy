@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom'
-import "./NavbarUser.css"
+import "./NavbarAdmin.css"
 import Logo from '../assets/logo.png';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
@@ -20,9 +20,9 @@ return (
           <Nav className="">
             <NavLink  to='/dashboardUser' className='text-navbar' href="#home">Experiencias</NavLink>
                 
-            <NavLink className='text-navbar' to="/signin" href="#Post">Ingresar</NavLink>
+            <NavLink className='text-navbar' to="/signin" href="#Post">Registrarte</NavLink>
                 
-            <NavLink className='text-navbar' to="/login" href="#form">Icono </NavLink>
+            <NavLink className='text-navbar' to="/login" href="#form">Login </NavLink>
                 
           </Nav>
           </Navbar.Collapse>

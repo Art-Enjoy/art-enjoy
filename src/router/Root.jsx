@@ -1,12 +1,12 @@
 import { Outlet } from "react-router-dom";
-import NavbarAdmin from "../components/NavbarAdmin";
+import NavbarUser from "../components/NavbarUser";
 import Footer from "../components/Footer";
 import Slogan from"../components/Slogan"
 
 function Root() {
     return (
         <>
-            <NavbarAdmin />
+            <NavbarUser />
             <Slogan/>
             <Outlet />
             <Footer />

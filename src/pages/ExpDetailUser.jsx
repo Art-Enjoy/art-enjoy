@@ -22,9 +22,7 @@ const ExpDetailUser = () => {
           <h3 className="price"><img src={Price} id="price1"/>Precio por tikets:{exp.price}</h3>
          
           </div> 
-          <Link to='/formsUser'>
-                  <Button className="btn-buy"id="btn" >Comprar tikets</Button>
-            </Link>
+        
           
         
         

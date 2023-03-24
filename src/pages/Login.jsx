@@ -10,7 +10,7 @@ export default class Login extends Component {
       <>
       <Container>
       <form>
-        <h3>Registro</h3>
+        <h3>Iniciar Sesión</h3>
         <div className="mb-3">
           <label>Email </label>
           <input
