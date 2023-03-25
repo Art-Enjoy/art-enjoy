@@ -16,6 +16,7 @@ import AboutUs from "../pages/AboutUs";
 import LoginAdmin from "../pages/LoginAdmin";
 import Login from "../pages/Login";
 import SignIn from "../pages/SignIn";
+import Cart from "../pages/Cart";
 
 
 
@@ -93,6 +94,12 @@ export const router = createBrowserRouter([{
                     {
                         path: '/dashboardUser',
                         element: <DashboardUser />,
+                        loader: loaderAdvertisement,
+                       
+                    },  
+                    {
+                        path: '/cart',
+                        element: <Cart />,
                         loader: loaderAdvertisement,
                        
                     },  

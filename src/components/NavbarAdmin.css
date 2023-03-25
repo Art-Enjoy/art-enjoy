@@ -1,10 +1,11 @@
 .Logo{
     width: 8vw !important;
-    padding-right: 20px;
-    margin-right: 20px;
+    padding-right: 1.25rem;
+    margin-right: 1.25rem;
     
       
   }
+  
   
   
   .navigation{
@@ -22,6 +23,24 @@
     text-decoration: none;
     
   }
+  .cart {
+    cursor: pointer;
+    margin-left: 6.25rem;
+  }
+  .cart span:nth-child(1) {
+    font-size: 2rem;
+    color: rgb(5, 5, 5);
+  }
+  .cart span:nth-child(2) {
+    padding: 0 .1875rem;
+    background-color: rgb(18, 185, 110);
+    color: rgb(10, 10, 10);
+    font-weight: bolx;
+    border-radius: .3125rem;
+    position: relative;
+    top: -0.9375rem;
+  }
+  
   
   #responsive-navbar-nav{
     color: #090909 !important;

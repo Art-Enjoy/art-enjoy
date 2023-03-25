@@ -7,29 +7,8 @@
 
 }
 
-.btn-add:hover {
-    color: white;
-    background-color: #9243e7;
-}
 
-.card {
-    position: relative;
-    width: 18.125rem;
-    height: 420px;
-    margin-top: 2.5rem;
-    margin-bottom: 1.25rem;
-    margin: 1.25rem;
-    color: #020202;
-    text-align: left;
 
-}
-.card:hover {
-    background-color: #b4f3dd;
-    opacity: 0.8; 
-    cursor: pointer;
-    transform: scale(1.1);
-    
-} 
 .stars{
     color:rgb(247, 165, 32);
    
