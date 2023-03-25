@@ -11,7 +11,7 @@ const apiClient = axios.create({
 
 export const productService = {
     async getProducts() {
-        let response = await apiClient.get("/Product");
+        let response = await apiClient.get("/Product/Get");
         if (!response==200)
             throw {
                 status: response.status,
@@ -32,13 +32,13 @@ export const productService = {
         return product;
     },
     async submitProduct(newProduct){
-        await apiClient.post("/Product", newProduct)
+        await apiClient.post("/Product/Post", newProduct)
     },
     async deleteProduct(id){
-        await apiClient.delete("/Product" + id)
+        await apiClient.delete("/Product/DeleteById" + id)
     },
     async updateProduct(id, updatedProduct){
-        await apiClient.patch("/Product" + id, updatedProduct)
+        await apiClient.patch("/Product/Put" + id, updatedProduct)
     }
 }
 
