@@ -2,9 +2,9 @@ import { productService } from "../service/productService";
 
 export const productHandler = {
     addProduct(newProduct){
-        if (!newProduct) {
+       /*  if (!newProduct) {
             return;
-        }
+        }  */
 
         let newProductStructure = { 
             "id": "",
@@ -13,7 +13,7 @@ export const productHandler = {
             "description": newProduct.description,
             "units": newProduct.units,
              "location": newProduct.location,
-             "img": newProduct.img,
+             //"img": newProduct.img,
         }
 
         return productService.submitProduct(newProductStructure);

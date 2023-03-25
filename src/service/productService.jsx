@@ -32,7 +32,7 @@ export const productService = {
         return product;
     },
     async submitProduct(newProduct){
-        await apiClient.post("/Product/Post", newProduct)
+        await apiClient.post("https://localhost:7132/Product/Post", newProduct)
     },
     async deleteProduct(id){
         await apiClient.delete("/Product/DeleteById/" + id)

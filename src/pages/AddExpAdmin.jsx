@@ -86,7 +86,7 @@ const AddExpAdmin = () => {
         </div>
         <div className="mb-3">
           <label htmlFor="img" className="form-label">Imagen</label>
-          <input name="img" type="file" className="form-control" onChange={handleImgChange} required />
+          <input name="img" type="file" className="form-control" onChange={handleImgChange} />
         </div>
 
         <button type="submit" className="btn btn-primary" id="btn" onClick={handleShow}>Añadir</button>
