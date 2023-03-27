@@ -7,7 +7,9 @@ import Button from "react-bootstrap/Button";
 import { Link } from 'react-router-dom'
 
 const ExpDetailUser = () => {
-  const { exp } = useLoaderData();
+
+const{exp}=useLoaderData();
+
 
   return (
   <section className="general-container">
@@ -22,9 +24,7 @@ const ExpDetailUser = () => {
           <h3 className="price"><img src={Price} id="price1"/>Precio por tikets:{exp.price}</h3>
          
           </div> 
-          <Link to='/formsUser'>
-                  <Button className="btn-buy"id="btn" >Comprar tikets</Button>
-            </Link>
+        
           
         
         

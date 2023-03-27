@@ -1,7 +1,7 @@
 .btn-detail{
     background-color: #039C7E;
     color: white;
-    margin-top: -25px;
+    margin-top: -1.5625rem;
 
 }
 .btn-detail:hover{
@@ -9,6 +9,19 @@
     background-color: #af80f6;
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
     }
+.btn-buy{
+    background-color: #039C7E;
+    color: white;
+    margin-top: -2.8125rem;
+    margin-left: 8.125rem;
+
+  }
+.btn-buy:hover{
+  color: white;
+  background-color: #3f8f3f;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+
+}
 
 .stars{
     color:rgb(247, 165, 32);

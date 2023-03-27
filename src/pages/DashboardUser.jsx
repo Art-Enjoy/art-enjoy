@@ -28,6 +28,12 @@ function DashboardUser() {
       product.location.toLowerCase().includes(searchQuery.toLowerCase())
 
   );
+  const cartProducts = JSON.parse(localStorage.getItem("cartProducts")) || [];
+  const addToCart = async (product) => {
+    console.log("cart product array", cartProducts);
+    cartProducts.push(product);
+    localStorage.setItem("cartProducts", JSON.stringify(cartProducts));
+  }
  
 
 
@@ -70,6 +76,10 @@ function DashboardUser() {
                 <Link to={`/expdetailuser/${product.id}`}>
                   <Button className="btn-detail" >Detalles</Button>
                 </Link>
+                <Link to='/cart'>
+                  <Button className="btn-buy" onClick={() => addToCart(product)}>Añadir al carrito</Button>
+                  
+            </Link>
               </Card.Body>
             </div>
           );
