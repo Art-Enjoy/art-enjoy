@@ -7,7 +7,7 @@ import Navbar from 'react-bootstrap/Navbar';
 
 
 
-function NavbarUser() {
+function NavbarUser({ setShow, size }) {
 return (
 
     <Navbar bg="light"  expand="lg" className='navigation'>
@@ -23,7 +23,12 @@ return (
             <NavLink className='text-navbar' to="/signin" href="#Post">Ingresar</NavLink>
                 
             <NavLink className='text-navbar' to="/login" href="#form">Icono </NavLink>
-                
+            <div className="cart" onClick={() => setShow(false)}>
+            <span>
+              <i className="fas fa-cart-plus"></i>
+            </span>
+            <span>{size}</span>
+          </div>
           </Nav>
           </Navbar.Collapse>
         </Container>

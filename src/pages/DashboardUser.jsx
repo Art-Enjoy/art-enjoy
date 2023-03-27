@@ -7,6 +7,7 @@ import Button from "react-bootstrap/Button";
 
 import Card from "react-bootstrap/Card";
 import { Link, useLoaderData } from "react-router-dom";
+import NavbarUser from "../components/NavbarUser";
 // import { productHandler } from "../handler/productHandler";
 
 
@@ -31,6 +32,8 @@ function DashboardUser() {
 
 
   return (
+   
+    
     <div className="container-gn" id="text">
       <h1>Todas las experiencias</h1>
     <>
