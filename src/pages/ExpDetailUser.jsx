@@ -3,8 +3,6 @@ import Location from '../assets/location.png';
 import Price from '../assets/Price.png';
 import './ExpDetail.css';
 import "bootstrap/dist/css/bootstrap.min.css";
-import Button from "react-bootstrap/Button";
-import { Link } from 'react-router-dom'
 
 const ExpDetailUser = () => {
   const { exp } = useLoaderData();
@@ -20,11 +18,10 @@ const ExpDetailUser = () => {
           <h4><img src={Location} id="logo-location"/>Ubicación:{exp.location}</h4>
           <h5 className="description">Descripción:{exp.description}</h5>
           <h3 className="price"><img src={Price} id="price1"/>Precio por tikets:{exp.price}</h3>
+          <h4 className="units">Tikets: {exp.units}</h4>
          
           </div> 
-          <Link to='/formsUser'>
-                  <Button className="btn-buy"id="btn" >Comprar tikets</Button>
-            </Link>
+        
           
         
         

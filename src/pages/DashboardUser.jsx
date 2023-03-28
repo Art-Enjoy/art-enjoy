@@ -7,8 +7,6 @@ import Button from "react-bootstrap/Button";
 
 import Card from "react-bootstrap/Card";
 import { Link, useLoaderData } from "react-router-dom";
-// import { productHandler } from "../handler/productHandler";
-
 
 
 
@@ -27,10 +25,20 @@ function DashboardUser() {
       product.location.toLowerCase().includes(searchQuery.toLowerCase())
 
   );
+  const cartProducts = JSON.parse(localStorage.getItem("cartProducts")) || [];
+  const addToCart = async (product) => {
+    console.log("cart product array", cartProducts);
+    cartProducts.push(product);
+    localStorage.setItem("cartProducts", JSON.stringify(cartProducts));
+  }
+
+ 
+  
  
 
-
   return (
+   
+    
     <div className="container-gn" id="text">
       <h1>Todas las experiencias</h1>
     <>
@@ -51,22 +59,13 @@ function DashboardUser() {
               <Card.Body>
                 <Card.Title>{product.title}</Card.Title>
                 <Card.Text>{product.location}</Card.Text>
-                <p class="clasification">
-                <input id="radio1" type="radio" name="estrellas" value="5"></input>
-                <label className="stars"for="radio1">★</label>
-                <input id="radio1" type="radio" name="estrellas" value="4"></input>
-                <label className="stars"for="radio1">★</label>
-                <input id="radio1" type="radio" name="estrellas" value="3"></input>
-                <label className="stars" for="radio1">★</label>
-                <input id="radio1" type="radio" name="estrellas" value="2"></input>
-                <label className="stars" for="radio1">★</label>
-                <input id="radio1" type="radio" name="estrellas" value="1"></input>
-                <label className="stars" for="radio1">★</label>
-
-                </p>
                 <Link to={`/expdetailuser/${product.id}`}>
                   <Button className="btn-detail" >Detalles</Button>
                 </Link>
+                <Link to='/cart'>
+                  <Button className="btn-buy" onClick={() => addToCart(product)}>Añadir al carrito</Button>
+                  
+            </Link>
               </Card.Body>
             </div>
           );
