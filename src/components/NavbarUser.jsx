@@ -4,12 +4,9 @@ import Logo from '../assets/logo.png';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import cart from "../assets/tiket.jpg"
 
 
-
-
-function NavbarUser() {
+function NavbarUser({ setShow }) {
   return (
 
     <Navbar bg="light" expand="lg" className='navigation'>
@@ -26,13 +23,11 @@ function NavbarUser() {
 
             <NavLink className='text-navbar' to="/login" >Login </NavLink>
             <div className="cart" onClick={() => setShow(false)}>
-          <span>
-            <i className="fas fa-cart-plus"></i>
-          </span>
-          <span>0</span>
-        </div>
-            
+              <span>
+                <NavLink to='/cart' className="fas fa-cart-plus" id="cart"></NavLink>
 
+              </span>
+            </div>
 
           </Nav>
         </Navbar.Collapse>

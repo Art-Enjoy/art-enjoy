@@ -6,7 +6,18 @@
       
   }
   
-  
+  #cart{
+    cursor: pointer;
+    padding: 0 3px;
+    text-decoration: none;
+    color: rgb(1, 1, 1);
+    font-weight: bolx;
+    margin-left: 1.875rem;
+    position: relative;
+    top:-5px;
+   
+
+  }
   
   .navigation{
    background-image: url(https://static.vecteezy.com/system/resources/previews/006/413/042/non_2x/gradient-abstract-background-you-can-use-this-background-for-your-content-like-as-video-game-qoute-promotion-blogging-template-presentation-education-sports-card-banner-website-and-anymore-free-vector.jpg)!important;

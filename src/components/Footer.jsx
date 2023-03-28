@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom'
 import facebook from '../assets/facebook.png'
 import instagram from '../assets/instagram.png'
 import twitter from '../assets/twitter.png'
+import { Container } from 'react-bootstrap';
 
 
 
@@ -12,7 +13,8 @@ import twitter from '../assets/twitter.png'
 function Footer ()  {
 
   return (
-    <Nav className='footer fixed-bottom'
+    
+    <Nav className='footer '
      
     >
       <Nav.Item >
@@ -41,6 +43,7 @@ function Footer ()  {
         </Link>
       </Nav.Item> 
     </Nav>
+    
   
  );
 }

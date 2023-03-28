@@ -18,7 +18,7 @@ const ExpDetail = () => {
           <h4><img src={Location} id="logo-location"/>Ubicación:{exp.location}</h4>
           <h5 className="description">Descripción:{exp.description}</h5>
           <h3 className="price"><img src={Price} id="price1"/>Precio por tikets:{exp.price}</h3>
-          <h4 className="units">Entradas disponibles: {exp.units}</h4>
+          <h4 className="units">Tikets: {exp.units}</h4>
           </div> 
           
         

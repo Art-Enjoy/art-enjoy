@@ -1,12 +1,18 @@
 import React,{ useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./DashboardUser.css";
+import "./DashboardAdmin.css";
 
 import Button from "react-bootstrap/Button";
+
 import Card from "react-bootstrap/Card";
 import { Link, useLoaderData } from "react-router-dom";
-// import { productHandler } from "../handler/productHandler";
+
+
+
+
 function DashboardUser() {
+ 
   const handleSearchChange = (event) => {
     setSearchQuery(event.target.value);
   };
@@ -18,9 +24,22 @@ function DashboardUser() {
       product.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
       product.price.toLowerCase().includes(searchQuery.toLowerCase())||
       product.location.toLowerCase().includes(searchQuery.toLowerCase())
+
   );
+  const cartProducts = JSON.parse(localStorage.getItem("cartProducts")) || [];
+  const addToCart = async (product) => {
+    console.log("cart product array", cartProducts);
+    cartProducts.push(product);
+    localStorage.setItem("cartProducts", JSON.stringify(cartProducts));
+  }
+
+ 
   
+ 
+
   return (
+   
+    
     <div className="container-gn" id="text">
       <h1>Todas las experiencias</h1>
     <>
@@ -41,11 +60,13 @@ function DashboardUser() {
               <Card.Body>
                 <Card.Title>{product.title}</Card.Title>
                 <Card.Text>{product.location}</Card.Text>
-                <Button className="btn-detail" onClick={() => handleClick(product)}>Add to Cart</Button>
                 <Link to={`/expdetailuser/${product.id}`}>
                   <Button className="btn-detail" >Detalles</Button>
                 </Link>
-                
+                <Link to='/cart'>
+                  <Button className="btn-buy" onClick={() => addToCart(product)}>Añadir al carrito</Button>
+                  
+            </Link>
               </Card.Body>
             </div>
           );
@@ -55,4 +76,5 @@ function DashboardUser() {
     </div>
   );
 }
+
 export default DashboardUser;

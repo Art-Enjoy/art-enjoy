@@ -16,7 +16,7 @@ import AboutUs from "../pages/AboutUs";
 import LoginAdmin from "../pages/LoginAdmin";
 import Login from "../pages/Login";
 import SignIn from "../pages/SignIn";
-import Cart from "../pages/Cart";
+import Cart from "../components/Cart";
 
 
 
@@ -98,11 +98,9 @@ export const router = createBrowserRouter([{
                        
                     },  
                     {
-                        path: '/cart',
-                        element: <Cart />,
-                        loader: loaderAdvertisement,
-                       
-                    },  
+                        path: "/cart",
+                        element: <Cart />
+                    },
                 ]
 }
 ]
