@@ -16,10 +16,7 @@ import AboutUs from "../pages/AboutUs";
 import LoginAdmin from "../pages/LoginAdmin";
 import Login from "../pages/Login";
 import SignIn from "../pages/SignIn";
-import FormsUser from "../pages/FormsUser"
-import PromotionEsp from "../pages/PromotionEsp";
-import PromotionTarifa from "../pages/PromotionTarifa";
-import PromotionMalg from "../pages/PromotionMalg";
+import Cart from "../components/Cart";
 
 
 
@@ -76,10 +73,7 @@ export const router = createBrowserRouter([{
                         path: "/aboutus",
                         element: <AboutUs />,
                     },
-                    {
-                        path: '/formsUser',
-                        element: <FormsUser />,
-                    },  
+                  
                     
                      {
                         path: "/admin",
@@ -101,25 +95,11 @@ export const router = createBrowserRouter([{
                         element: <DashboardUser />,
                         loader: loaderAdvertisement,
                        
-                    }, 
+                    },  
                     {
-                        path: '/plazaespaña-sevilla',
-                        element: <PromotionEsp />,
-                        loader: loaderAdvertisement,
-                       
-                    },   
-                    {
-                        path:'/trafalgar-cadiz',
-                        element: <PromotionTarifa />,
-                        loader: loaderAdvertisement,
-                       
-                    },   
-                    {
-                        path: '/picasso-malaga',
-                        element: <PromotionMalg />,
-                        loader: loaderAdvertisement,
-                       
-                    },   
+                        path: "/cart",
+                        element: <Cart />
+                    },
                 ]
 }
 ]
@@ -134,4 +114,3 @@ async function loaderAdvertisement() {
     const products = await productHandler.loadProducts()
     return { products };
 };
-
