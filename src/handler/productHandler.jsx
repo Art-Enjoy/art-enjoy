@@ -1,22 +1,35 @@
 import { productService } from "../service/productService";
 
+
 export const productHandler = {
-    addProduct(newProduct){
+     addProduct(newProduct){
        /*  if (!newProduct) {
             return;
         }  */
-
+        let imgStringData = newProduct.img;
+        let imgStringDataSplit = imgStringData.split(',');
+        let imgContent = imgStringDataSplit[1];
+        let imgExtension = file[0].split(';')[0].split(':')[1];
+       
+       
         let newProductStructure = { 
+            "product": {
             "id": "",
             "title": newProduct.title,
             "price": newProduct.price,
             "description": newProduct.description,
             "units": newProduct.units,
              "location": newProduct.location,
-             //"img": newProduct.img,
+             //"img": newProduct.img
+        },
+        "base64FileModel": {
+            "fileName": newProduct.title + "-Photo",
+            "base64FileContent": imgContent,
+            "extension": imgExtension
         }
-
-        return productService.submitProduct(newProductStructure);
+    }
+console.log  (newProductStructure)
+        return  productService.submitProduct(newProductStructure);
         
     },
 

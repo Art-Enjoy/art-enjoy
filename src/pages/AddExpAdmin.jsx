@@ -13,6 +13,7 @@ const AddExpAdmin = () => {
   const [units, setUnits] = useState("");
   const [location, setLocation] = useState("");
   const [img, setImg] = useState("");
+  
 
   const handleTitleChange = (event) => {
     let titleInput = event.target.value;
@@ -42,10 +43,23 @@ const AddExpAdmin = () => {
     reader.onload = () => {
       setImg(reader.result)
     };
+    console.log (file)
   };
+  /* const handleImgChange = (event) => {
+    const file = event.target.files[0];
+    const reader = new FileReader();
+    reader.readAsDataURL(file);
+    console.log(file)
+    reader.onload = () => {
+      const base64String = reader.result.split(",")[1]; // Obtener la cadena base64 sin la cabecera
+      console.log("ësto es el readeeeeeeeer", base64String);
+      setValue("img", base64String);
+      };console.log(file)
+    }; */
   const handleSubmit = (event) => {
     event.preventDefault();
-    let newProduct = { title, description, price, units, location, img };
+    let newProduct = { title, description, price, units, location, img, file };
+    console.log(newProduct)
     productHandler.addProduct(newProduct);
     event.target.reset()
   };
