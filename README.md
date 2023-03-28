@@ -1,4 +1,5 @@
 # art-enjoy
+
 ART&ENJOY
 
 Welcome to our experiences' platform. Here you can find a wide variety of special experiences, created with enthusiasm and finesse by experienced tour guides. We are committed to offering an easy and secure shopping experience so that you can acquire these amazing experiences you can't miss. Join our web and discover unique and amazing experiences! Find our experience promotions!
@@ -24,7 +25,6 @@ TECHNOLOGIES:
 -Bootstrap
 -CSS
 -JS
-
 
 
 Requirements, Installation and Getting started:
@@ -65,9 +65,9 @@ Search Bar: You can search by location or experience title.
 
  TESTING:
 
-(dashboard Admin) map linea 48 // .filter line 21 / como testear function filter con json?
 
 
-To run the test, the following command should be executed on the command line:
- npm run test.
+TEAM
 
+[<img src="https://avatars.githubusercontent.com/u/117835592?v=4" width=115><br><sub> Aldara Martinez </sub>](https://github.com/AldaraMG)| [<img src="https://avatars.githubusercontent.com/u/117833121?v=4" width=115><br><sub>Jennifer Cordero</sub>](https://github.com/JenniferCorderoR) | [<img src="https://avatars.githubusercontent.com/u/117833691?v=4" width=115><br><sub>Magdalena Reig</sub>](https://github.com/MagdalenaRB) | [<img src="https://avatars.githubusercontent.com/u/117834108?v=4" width=115><br><sub>Yamila Marquez</sub>](https://github.com/Milacover) | [<img src="https://avatars.githubusercontent.com/u/124665913?v=4" width=115><br><sub>Miriam García</sub>](https://github.com/miriamremesal) |
+| :---: | :---: | :---: |  :---: |  :---: | 
