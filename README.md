@@ -11,7 +11,10 @@ TOOLS:
 -Trello:
 https://trello.com/b/BJc56X0M/art-enjoy
 
--Desktop graphic reference. Figma:
+-Desktop graphic reference:
+
+
+-Figma:
 https://www.figma.com/file/8n8e7bBmO57yphQJQuRFMF/Art%26Enjoy?node-id=0-1&t=Cb4B4kiL3eFK6Nam-0
 
 -Git / GitHub:
@@ -66,17 +69,16 @@ Search Bar: You can search by location or experience title.
  TESTING:
 
 COMPONET TESTING 
-
-We need to install:
-npm install --save-dev vitest
-npm install --save-dev jsdom 
-npm install --save-dev @testing-library/jest-dom
-npm instal --save-dev @testing-library/react
+•	We need to install:
+•	npm install --save-dev vitest
+•	npm install --save-dev jsdom 
+•	npm install --save-dev @testing-library/jest-dom
+•	npm instal --save-dev @testing-library/react
 
 We need to import:
-import ExpDetail from "../pages/ExpDetail";
-import { render, screen } from "@testing-library/react";
-import '@testing-library/jest-dom';
+•	import ExpDetail from "../pages/ExpDetail";
+•	import { render, screen } from "@testing-library/react";
+•	import '@testing-library/jest-dom';
 
 In the ExpDetail.test.jsx file, we tested:
 
