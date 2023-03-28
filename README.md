@@ -65,6 +65,38 @@ Search Bar: You can search by location or experience title.
 
  TESTING:
 
+COMPONET TESTING 
+
+We need to install:
+npm install --save-dev vitest
+npm install --save-dev jsdom 
+npm install --save-dev @testing-library/jest-dom
+npm instal --save-dev @testing-library/react
+
+We need to import:
+import ExpDetail from "../pages/ExpDetail";
+import { render, screen } from "@testing-library/react";
+import '@testing-library/jest-dom';
+
+In the ExpDetail.test.jsx file, we tested:
+
+In the first test we check that the title of the exp is printed
+correctly:
+
+test('should render product title', () => {
+        const titleElement = screen.getByText(/La Alhambra/i);
+        expect(titleElement).toBeInTheDocument();
+    });
+
+In the second test we check that the exp description is printed
+correctly:
+
+test('should render product description', () => {
+        const descriptionElement = screen.getByText(/this is a test item/i);
+        expect(descriptionElement).toBeInTheDocument();
+    });
+
+If in terminal we execute the : npm run test command, our tests should pass.
 
 
 TEAM
