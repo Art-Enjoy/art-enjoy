@@ -13,7 +13,6 @@ const AddExpAdmin = () => {
   const [units, setUnits] = useState("");
   const [location, setLocation] = useState("");
   const [img, setImg] = useState("");
-  
 
   const handleTitleChange = (event) => {
     let titleInput = event.target.value;
@@ -43,29 +42,25 @@ const AddExpAdmin = () => {
     reader.onload = () => {
       setImg(reader.result)
     };
-    console.log (file)
   };
-  /* const handleImgChange = (event) => {
-    const file = event.target.files[0];
-    const reader = new FileReader();
-    reader.readAsDataURL(file);
-    console.log(file)
-    reader.onload = () => {
-      const base64String = reader.result.split(",")[1]; // Obtener la cadena base64 sin la cabecera
-      console.log("ësto es el readeeeeeeeer", base64String);
-      setValue("img", base64String);
-      };console.log(file)
-    }; */
+  
+  const allFieldsFilled = title && price && description && units && location && img;
+
   const handleSubmit = (event) => {
     event.preventDefault();
-    let newProduct = { title, description, price, units, location, img, file };
-    console.log(newProduct)
+    let newProduct = { title, description, price, units, location, img };
     productHandler.addProduct(newProduct);
     event.target.reset()
   };
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+  const handleShow = () => {
+    if (allFieldsFilled) {
+      setShow(true);
+    } else {
+      alert('Por favor rellene todos los campos');
+    }
+  };
 
 
   return (
@@ -100,17 +95,16 @@ const AddExpAdmin = () => {
         </div>
         <div className="mb-3">
           <label htmlFor="img" className="form-label">Imagen</label>
-          <input name="img" type="file" className="form-control" onChange={handleImgChange} />
+          <input name="img" type="file" className="form-control" onChange={handleImgChange} required />
         </div>
 
         <button type="submit" className="btn btn-primary" id="btn" onClick={handleShow}>Añadir</button>
 
-        <Modal className="modal" show={show} onHide={handleClose}>
+        <Modal className="modal" show={show && allFieldsFilled} onHide={handleClose}>
           <Modal.Header closeButton>
             <Modal.Title>Todo correcto!</Modal.Title>
           </Modal.Header>
           <Modal.Body className="modal-body">Su experiencia ha sido añadida</Modal.Body>
-        
         </Modal>
       </form>
 
@@ -118,3 +112,4 @@ const AddExpAdmin = () => {
   );
 };
 export default AddExpAdmin;
+
