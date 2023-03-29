@@ -12,19 +12,19 @@ import { productHandler } from "../handler/productHandler";
 
 function DashboardAdmin() {
 
-  const handleSearchChange = (event) => {
-    setSearchQuery(event.target.value);
-  };
-  const { products } = useLoaderData();
-  const [productsData, setProductsData] = useState(products);
-  const [searchQuery, setSearchQuery] = useState("");
-  const data = productsData.filter(
-    (product) =>
-      product.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
+  // const handleSearchChange = (event) => {
+  //   setSearchQuery(event.target.value);
+  // };
+  // const { products } = useLoaderData();
+  // const [productsData, setProductsData] = useState(products);
+  // const [searchQuery, setSearchQuery] = useState("");
+  // const data = productsData.filter(
+  //   (product) =>
+  //     product.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
       
-      product.location.toLowerCase().includes(searchQuery.toLowerCase())
+  //     product.location.toLowerCase().includes(searchQuery.toLowerCase())
 
-  );
+  // );
   const deleteProduct = async (id) => {
     await productHandler.deleteProduct(id);
     setProductsData(productsData.filter(exp => exp.id !== id))
@@ -35,7 +35,7 @@ function DashboardAdmin() {
     <div className="container-gn" id="text">
       <h1>Bienvenido a tu panel de experiencias</h1>
       <>
-        <div className="container-bar">
+        {/* <div className="container-bar">
           <input
             className="searchStyle"
             type="text"
@@ -43,7 +43,7 @@ function DashboardAdmin() {
             value={searchQuery}
             onChange={handleSearchChange}
           />
-        </div>
+        </div> */}
         <div className="cards">
           {data.map((product) => {
             return (

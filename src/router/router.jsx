@@ -126,12 +126,12 @@ export const router = createBrowserRouter([{
 
 )
 async function loaderexp({ params }) {
-    const exp = await productHandler.loadProduct(params.id)
+    const exp = await productHandler.loadProductsBase64Array(params.id)
     return { exp };
 };
 
 async function loaderAdvertisement() {
-    const products = await productHandler.loadProducts()
+    const products = await productHandler.loadProductsBase64Array()
     return { products };
 };
 

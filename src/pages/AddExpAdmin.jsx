@@ -12,8 +12,9 @@ const AddExpAdmin = () => {
   const [description, setDescription] = useState("");
   const [units, setUnits] = useState("");
   const [location, setLocation] = useState("");
-  const [img, setImg] = useState("");
-  
+  //const [img, setImg] = useState("");
+  const [imgBase64, setImgBase64] = useState(null);
+const [imgFile, setImgFile] = useState(null);
 
   const handleTitleChange = (event) => {
     let titleInput = event.target.value;
@@ -36,38 +37,60 @@ const AddExpAdmin = () => {
     let locationInput = event.target.value;
     setLocation(locationInput);
   };
-  const handleImgChange = (event) => {
+  // const handleImgChange = (event) => {
+  //   const file = event.target.files[0];
+  //   const reader = new FileReader();
+  //   reader.readAsDataURL(file);
+  //   reader.onload = () => {
+  //     setImg(reader.result)
+  //   };
+    
+  //};
+  const handleImgBase64Change = (event) => {
     const file = event.target.files[0];
     const reader = new FileReader();
     reader.readAsDataURL(file);
     reader.onload = () => {
-      setImg(reader.result)
+      setImgBase64(reader.result)
     };
-    console.log (file)
-  };
-  /* const handleImgChange = (event) => {
-    const file = event.target.files[0];
-    const reader = new FileReader();
-    reader.readAsDataURL(file);
-    console.log(file)
-    reader.onload = () => {
-      const base64String = reader.result.split(",")[1]; // Obtener la cadena base64 sin la cabecera
-      console.log("ësto es el readeeeeeeeer", base64String);
-      setValue("img", base64String);
-      };console.log(file)
-    }; */
-  const handleSubmit = (event) => {
+  }
+  const handleSubmitBase64 = (event) => {
     event.preventDefault();
-    let newProduct = { title, description, price, units, location, img, file };
-    console.log(newProduct)
-    productHandler.addProduct(newProduct);
-    event.target.reset()
+    let newProductBase64RequestModel = { title, description, price, units, location, imgBase64 };
+    console.log(newProductBase64RequestModel);
+    productHandler.addProductImgBase64(newProductBase64RequestModel);
+
   };
+  
+  const handleImgFileChange = (event) => {
+    const file = event.target.files[0];
+    setImgFile(file);
+  }
+  const handleSubmitFile = (event) => {
+    event.preventDefault();
+    let newProductFileRequestModel = { title, price, imgFile };
+    productHandler.addProductImgFile(newProductFileRequestModel);
+  };
+  // const handleSubmit = (event) => {
+  //   event.preventDefault();
+  //   let newProduct = { title, description, price, units, location, img, file };
+  //   console.log(newProduct)
+  //   productHandler.addProduct(newProduct);
+  //   event.target.reset()
+  // };
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+// Union de handleShow Modal handleSubmitBase64 
 
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    handleShow();
+    let newProductBase64RequestModel = { title, description, price, units, location, imgBase64 };
+    console.log("esto viene del componente",newProductBase64RequestModel);
+    productHandler.addProductImgBase64(newProductBase64RequestModel);
 
+  }
   return (
     <div className="container-form">
       <form onSubmit={handleSubmit} itemID="form1">
@@ -100,10 +123,10 @@ const AddExpAdmin = () => {
         </div>
         <div className="mb-3">
           <label htmlFor="img" className="form-label">Imagen</label>
-          <input name="img" type="file" className="form-control" onChange={handleImgChange} />
+          <input name="img" type="file" className="form-control" onChange={handleImgBase64Change} />
         </div>
 
-        <button type="submit" className="btn btn-primary" id="btn" onClick={handleShow}>Añadir</button>
+        <button type="submit" className="btn btn-primary" id="btn" onClick={handleSubmit}>Añadir</button>
 
         <Modal className="modal" show={show} onHide={handleClose}>
           <Modal.Header closeButton>
