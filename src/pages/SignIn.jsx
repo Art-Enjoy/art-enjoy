@@ -8,6 +8,7 @@ export default function SignIn() {
       <Container>
      
                     <Form>
+                    <h3>Regístrate!</h3>
                       <Form.Group className="mb-3" controlId="Name">
                         <Form.Label className="text-center">Nombre</Form.Label>
                         <Form.Control type="text" placeholder="Ingrese Nombre" />

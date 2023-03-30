@@ -5,31 +5,15 @@
     margin-left: 2vh;
     margin-top: 10vh;
     margin-right: 2vh;
-
-
 }
 
 #container-text {
-   margin-left: -40px; 
+    margin-left: -40px;
     text-align: center;
-
     margin-right: 2vw;
     background-color: #cf9de5;
- 
     margin-top: 1vh;
     margin-bottom: 20px;
-
-
-}
-
-.incluid {
-    text-decoration: none;
-    color: rgb(236, 120, 43)
-}
-
-.incluid:hover {
-    text-decoration: none;
-    color: rgb(22, 98, 51)
 }
 
 #img-add {
@@ -46,41 +30,6 @@
     -khtml-border-radius: .580rem;
     padding: .580rem;
     background: #f4b557;
-
-}
-
-#img-add:hover {
-    border-style: solid;
-    color: rgb(167, 113, 243);
-    border-width: 8px;
-
-
-}
-
-h4 {
-    color: #f4f3f2;
-}
-
-.description {
-    margin-top: 7vh;
-    margin-left: 2vh;
-    text-align: center;
-    margin-right: 2vh;
-    color: #f4f3f2;
-
-}
-
-.units {
-    margin-top: 3vh;
-}
-
-.title-ad {
-    color: #f4891e;
-}
-
-.price {
-    margin-top: 8vh;
-    color: #f7f8f7;
 }
 
 .btn-buy {
@@ -89,282 +38,63 @@ h4 {
 }
 
 
-@media (max-width: 600px) {
-
-    .general-container {
-        
-        display: flex;
-        min-height: 100vh;
-
-
+@media only screen and (max-width: 768px) {
+    .add-title {
+        margin-top: 5vh;
+        margin-right: 1vw;
     }
+    
 
-    #div-exp {
-
+    #container-text {
+        margin-left: 2vw;
+        margin-right: 2vw;
+        margin-top: 3vh;
+        margin-bottom: 10px;
         display: flex;
-        min-height: 68.75rem;
-        min-width: 48vh;
-
+        flex-direction:column;
+        align-items: center;
     }
 
     #img-add {
-        width: 17.875rem;
-        height: 20rem;
-        object-fit: cover;
-        border-radius: 2vh;
-        margin-top: 4vh;
-        margin-left: 3.125rem;
-        display:block;
-
-        
+        width: 18.75rem;
+    margin: 0 auto 1rem;
     }
 
-    .title-add {
-        position: absolute;
-        margin-top: 36vh;
-        
-        padding-left: 1.5vh;
-
+    .btn-buy {
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 1.25rem;
+        margin-bottom: 1.25rem;
     }
-    
-
-   
-
-    .add-title {
-        position: absolute;
-        margin-top: 42vh;
-        margin-left: 0vh;
-
-    }
-    .add-title{
-        margin-left: 2vh;
-        text-align: center;
-       
-        margin-right: 2vh;
-    
-        margin-top: 1vh;
-        margin-bottom: 20px;
-    
-    
-    }
-
-    .price {
-        position: absolute;
-        margin-top: 330px
-    }
-
-    .units {
-        position: absolute;
-        margin-top: 120vh;
-        margin-left: 0vh;
-    }
-
-    .description {
-        position: absolute;
-        margin-top: 95vh;
-        margin-left: 1vh;
-        text-align: justify;
-        margin-right: 4vh;
-
-    }
-    #container-text {
-       
-        text-align: center;
-        
-        background-color: #cf9de5;
-        
-        width: 500px;
-        margin-bottom: 20px;
-    
-    
-    }
-   
-
 }
 
-/* @media (max-width: 420px) {
 
-    .general-container {
-
-        display: flex;
-        min-height: 100vh;
-
-
+@media only screen and (max-width: 340px) {
+    .add-title {
+        margin-top: 3vh;
+        margin-right: 1vw;
     }
+
     #container-text {
-        margin-left: 2vh;
-        text-align: center;
-        margin-top: 7vh;
-        margin-right: 2vh;
-    
-        margin-top: 1vh;
-        margin-bottom: 20px;
-    
-    
-    }
-
-    #div-exp {
-
-        display: flex;
-        min-height: 68.75rem;
-        min-width: 40vh;
-
+        margin-left: 2vw;
+        margin-right: 2vw;
+        margin-top: 2vh;
+        margin-bottom: 10px;
     }
 
     #img-add {
-        width: 17.875rem;
-        height: 17rem;
-        object-fit: cover;
-        border-radius: 2vh;
-        margin-top: 4vh;
-        margin-left: 2;
 
-        position: absolute;
-    }
-
-    .title-add {
-        position: absolute;
-        margin-top: 36vh;
-        border-radius: 1vh;
-        padding-left: 1.5vh;
-
-    }
-    .container-text{
-        margin-left: 2vh;
-        text-align: center;
-        margin-top: 7vh;
-        margin-right: 2vh;
-    
-        margin-top: 1vh;
-        margin-bottom: 20px;
-    
-    
-    }
-
-    #logo-location {
-        visibility: hidden;
+        width: 10.75rem;
+        margin: 2vh auto 1rem;
+        order: -1;
+       
 
     }
 
-    .add-title {
-        position: absolute;
-        margin-top: 42vh;
-        margin-left: 0vh;
-
-    }
-
-    .price {
-        position: absolute;
-        margin-top: 17vh;
-    }
-
-    .units {
-        position: absolute;
-        margin-top: 120vh;
-        margin-left: 0vh;
-    }
-
-
-    .description {
-        position: absolute;
-        margin-top: 70vh;
-        margin-left: 1vh;
-        text-align: justify;
-        margin-right: 4vh;
-        margin-bottom: 2vh;
-
-    }
     .btn-buy {
-        margin-top: 908px;
-     }
-
-} */
-
-
-/* @media (max-width: 390px) {
-
-    .general-container {
-
-        display: flex;
-        min-height: 100vh;
-
-
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 1.25rem;
+        margin-bottom: 1.25rem;
     }
-
-    #div-exp {
-
-        display: flex;
-        min-height: 68.75rem;
-        min-width: 39vh;
-
-    }
-
-    #img-add {
-        width: 17.875rem;
-        height: 17rem;
-        object-fit: cover;
-        border-radius: 2vh;
-        margin-top: 4vh;
-        margin-left: 2rem;
-
-        position: absolute;
-    }
-
-
-    .title-add {
-        position: absolute;
-        margin-top: 36vh;
-        border-radius: 1vh;
-        padding-left: 1.5vh;
-
-    }
-
-    #logo-location {
-        visibility: hidden;
-
-    }
-    .container-text{
-        margin-left: 2vh;
-        text-align: center;
-        margin-top: 7vh;
-        margin-right: 2vh;
-    
-        margin-top: 1vh;
-        margin-bottom: 20px;
-    
-    
-    }
-
-    .add-title {
-        position: absolute;
-        margin-top: 42vh;
-        margin-left: 0vh;
-
-    }
-
-    .price {
-        position: absolute;
-        margin-top: 17vh;
-    }
-
-    .units {
-        position: absolute;
-        margin-top: 120vh;
-        margin-left: 0vh;
-    }
-
-
-    .description {
-        position: absolute;
-        margin-top: 70vh;
-        margin-left: 1vh;
-        text-align: justify;
-        margin-right: 4vh;
-
-
-    }
-    .btn-buy {
-        margin-top: 908px;
-     }
-
-} */
+}

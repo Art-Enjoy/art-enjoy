@@ -2,6 +2,7 @@ import { useState,useEffect } from "react";
 import "./Cart.css"
 import Button from "react-bootstrap/Button";
 import Modal from 'react-bootstrap/Modal';
+import React from "react";
 
 const Cart = () => {
   const [cartProducts, setCartProducts,] = useState(JSON.parse(localStorage.getItem("cartProducts")) || []);
@@ -13,11 +14,7 @@ const Cart = () => {
     localStorage.removeItem("cartProducts");
     setCartProducts([]);
   }
-  // const handleRemove = (id) => {
-  //   const arr =cartProducts.filter((product) => product.id !== id);
-  //   setCartProducts(arr);
-  //   handlePrice();
-  // };
+ ;
   const handleRemove = (id) => {
     const arr =cartProducts.filter((product) => product.id !== id);
     setCartProducts(arr);
