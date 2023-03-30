@@ -72,7 +72,7 @@ const Cart = () => {
         <span>Cantidad total</span>
         <span>{price}€</span>
       </div>
-      <button type="submit" id="btn" onClick={handleShow}>Comprar</button>
+      <Button type="submit" id="btn" onClick={handleShow}>Comprar</Button>
             
             <Modal className="modal" show={show} onHide={handleClose}>
               <Modal.Header closeButton>

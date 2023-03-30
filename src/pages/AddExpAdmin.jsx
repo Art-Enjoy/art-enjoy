@@ -1,7 +1,7 @@
 import "./AddExpAdmin.css"
 import Modal from 'react-bootstrap/Modal';
 import { useState } from 'react';
-import { productHandler } from '../handler/productHandler';
+
 
 
 
