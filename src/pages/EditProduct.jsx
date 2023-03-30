@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import { productHandler } from "../handler/productHandler";
+import Button from "react-bootstrap/Button";
+
 
 
 function EditProduct() {
@@ -56,6 +58,8 @@ function EditProduct() {
         event.target.reset()
     };
 
+ 
+
 
 
     return (
@@ -96,7 +100,8 @@ function EditProduct() {
                             onChange={handleImgChange} />
                     </div>
 
-                    <button type="submit" className="btn btn-primary" id="btn-E">Update</button>
+                    <Button type="submit" className="btn btn-primary" id="btn">Update</Button>
+                    
                 </form>
             </div></>
     );

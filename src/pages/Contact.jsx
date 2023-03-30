@@ -6,10 +6,10 @@ import React, { useRef } from 'react';
 
 const Contact = () => {
   const refForm = useRef();
-  const [formFilled, setFormFilled] = useState(false); // Nuevo estado
+  const [formFilled, setFormFilled] = useState(false); 
 
   const handleInputChange = () => {
-    // Verificar si todos los campos tienen un valor
+   
     const form = refForm.current;
     const name = form.elements["user_name"].value;
     const email = form.elements["user_email"].value;

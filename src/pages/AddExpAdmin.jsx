@@ -61,12 +61,7 @@ const AddExpAdmin = () => {
       const newProduct = await res.json();
       setProducts([...products, newProduct]); // actualiza el estado products con el nuevo producto
       setShow(false);
-      setTitle("");
-      setPrice(null);
-      setDescription("");
-      setUnits("");
-      setLocation("");
-      setImg("");
+      e.target.reset()
     }
   };
 
