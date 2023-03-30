@@ -13,17 +13,15 @@ const PromotionMalg = () => {
                 <div className="ads p-2" id="container-text">
 
                     <h1 className="title-add"></h1>
-                    <div className="add-title">
+                    
                         <h4><img src={Location} id="logo-location" />Ubicación:Málaga</h4>
                         <h5 className="description">
                             La colección dedicada en su totalidad a la obra de Picasso comprende más de 230 obras de arte entre pinturas, esculturas, dibujos, obra gráfica y cerámicas que muestran las innovaciones revolucionarias de su trayectoria.</h5>
                            <a className="incluid"> En esta visita se incluye guía de habla española especializada en la obra de Picasso.
                             La duracion de la actividad es de una hora y media.</a>
                         <h3 className="price"><img src={Price} id="price1" />Dos tikets al precio de uno,por sólo 9,50!!</h3>
-                        <Link to='/formsUser'>
-                            <Button className="btn-buy" id="btn" >Comprar tikets</Button>
-                        </Link>
-                    </div>
+                       
+                    
 
 
 

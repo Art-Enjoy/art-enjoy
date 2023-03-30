@@ -17,6 +17,7 @@ function DashboardAdmin() {
   };
   const { products } = useLoaderData();
   const [productsData, setProductsData] = useState(products);
+  console.log(productsData)
   const [searchQuery, setSearchQuery] = useState("");
   const data = productsData.filter(
     (product) =>

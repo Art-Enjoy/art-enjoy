@@ -1,9 +1,11 @@
 import React from 'react'
+import { Container } from 'react-bootstrap'
 
 
 const Questions = () => {
   return (
     <>
+    <Container>
     <div ClassName='text-questions'>
       <ul>
         <li ClassName= 'text-questions'>¿El precio varía dependiendo de dónde lo compres?
@@ -34,7 +36,9 @@ const Questions = () => {
 
 
     </div>
+    </Container>
     </>
+    
   )
 }
 

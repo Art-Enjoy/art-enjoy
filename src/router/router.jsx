@@ -1,4 +1,3 @@
-
 import { createBrowserRouter } from "react-router-dom";
 import ExpDetail from "../pages/ExpDetail"
 import ExpDetailUser from "../pages/ExpDetailUser"
@@ -20,6 +19,7 @@ import FormsUser from "../pages/FormsUser"
 import PromotionEsp from "../pages/PromotionEsp";
 import PromotionTarifa from "../pages/PromotionTarifa";
 import PromotionMalg from "../pages/PromotionMalg";
+import Cart from "../components/Cart";
 
 
 
@@ -119,7 +119,12 @@ export const router = createBrowserRouter([{
                         element: <PromotionMalg />,
                         loader: loaderAdvertisement,
                        
-                    },   
+                    }, 
+                    {
+                        path: "/cart",
+                        element: <Cart />
+                    },
+  
                 ]
 }
 ]
@@ -134,4 +139,5 @@ async function loaderAdvertisement() {
     const products = await productHandler.loadProducts()
     return { products };
 };
+
 

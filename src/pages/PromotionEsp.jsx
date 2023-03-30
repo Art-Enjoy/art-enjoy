@@ -7,6 +7,7 @@ import Button from "react-bootstrap/Button";
 import Container from 'react-bootstrap/Container';
 
 const PromotionEsp = () => {
+   
     return (
         <Container>
         <section className="general-container">
@@ -23,9 +24,7 @@ const PromotionEsp = () => {
                             <a className="incluid">En esta visita se incluye guía de habla española  e inglesa.
                             La duración de la actividad es de 2 horas. .</a>
                         <h3 className="price"><img src={Price} id="price1" />Freetour!!</h3>
-                        <Link to='/formsUser'>
-                            <Button className="btn-buy" id="btn" >Comprar tikets</Button>
-                        </Link>
+                       
                     </div>
 
 

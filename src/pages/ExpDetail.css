@@ -10,11 +10,12 @@
 }
 
 #container-text {
-    margin-left: 2vh;
+   margin-left: -40px; 
     text-align: center;
-    margin-top: 7vh;
-    margin-right: 2vh;
+
+    margin-right: 2vw;
     background-color: #cf9de5;
+ 
     margin-top: 1vh;
     margin-bottom: 20px;
 
@@ -39,6 +40,7 @@
     border-radius: 2vh;
     margin-bottom: 20px;
     margin-left: 4vw;
+    margin-right: 5vw;
     -moz-border-radius: .580rem;
     -webkit-border-radius: .580rem;
     -khtml-border-radius: .580rem;
@@ -90,7 +92,7 @@ h4 {
 @media (max-width: 600px) {
 
     .general-container {
-
+        
         display: flex;
         min-height: 100vh;
 
@@ -112,22 +114,21 @@ h4 {
         border-radius: 2vh;
         margin-top: 4vh;
         margin-left: 3.125rem;
+        display:block;
 
-        position: absolute;
+        
     }
 
     .title-add {
         position: absolute;
         margin-top: 36vh;
-        border-radius: 1vh;
+        
         padding-left: 1.5vh;
 
     }
+    
 
-    #logo-location {
-        visibility: hidden;
-
-    }
+   
 
     .add-title {
         position: absolute;
@@ -135,10 +136,21 @@ h4 {
         margin-left: 0vh;
 
     }
+    .add-title{
+        margin-left: 2vh;
+        text-align: center;
+       
+        margin-right: 2vh;
+    
+        margin-top: 1vh;
+        margin-bottom: 20px;
+    
+    
+    }
 
     .price {
         position: absolute;
-        margin-top: 17vh;
+        margin-top: 330px
     }
 
     .units {
@@ -149,19 +161,28 @@ h4 {
 
     .description {
         position: absolute;
-        margin-top: 70vh;
+        margin-top: 95vh;
         margin-left: 1vh;
         text-align: justify;
         margin-right: 4vh;
 
     }
-    .btn-buy {
-       margin-top: 908px;
+    #container-text {
+       
+        text-align: center;
+        
+        background-color: #cf9de5;
+        
+        width: 500px;
+        margin-bottom: 20px;
+    
+    
     }
+   
 
 }
 
-@media (max-width: 420px) {
+/* @media (max-width: 420px) {
 
     .general-container {
 
@@ -169,6 +190,17 @@ h4 {
         min-height: 100vh;
 
 
+    }
+    #container-text {
+        margin-left: 2vh;
+        text-align: center;
+        margin-top: 7vh;
+        margin-right: 2vh;
+    
+        margin-top: 1vh;
+        margin-bottom: 20px;
+    
+    
     }
 
     #div-exp {
@@ -196,6 +228,17 @@ h4 {
         border-radius: 1vh;
         padding-left: 1.5vh;
 
+    }
+    .container-text{
+        margin-left: 2vh;
+        text-align: center;
+        margin-top: 7vh;
+        margin-right: 2vh;
+    
+        margin-top: 1vh;
+        margin-bottom: 20px;
+    
+    
     }
 
     #logo-location {
@@ -235,10 +278,10 @@ h4 {
         margin-top: 908px;
      }
 
-}
+} */
 
 
-@media (max-width: 390px) {
+/* @media (max-width: 390px) {
 
     .general-container {
 
@@ -280,6 +323,17 @@ h4 {
         visibility: hidden;
 
     }
+    .container-text{
+        margin-left: 2vh;
+        text-align: center;
+        margin-top: 7vh;
+        margin-right: 2vh;
+    
+        margin-top: 1vh;
+        margin-bottom: 20px;
+    
+    
+    }
 
     .add-title {
         position: absolute;
@@ -313,4 +367,4 @@ h4 {
         margin-top: 908px;
      }
 
-}
+} */
