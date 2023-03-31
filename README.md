@@ -50,6 +50,7 @@ Each experience with title, image, location, description, price and purchase but
 -Fourth user page, user login.
 -Fifth user page, ticket purchase.
 -Sixth user page, cart page where we can add or subtract products and finalize the purchase.
+
 ADMIN PAGES:
 -First admin page, admin login.
 -Second page of the admin, landing page that shows what our page contains and links to open, edit and delete our experiences.
