@@ -20,6 +20,7 @@ import FormsUser from "../pages/FormsUser"
 import PromotionEsp from "../pages/PromotionEsp";
 import PromotionTarifa from "../pages/PromotionTarifa";
 import PromotionMalg from "../pages/PromotionMalg";
+import Cart from "../components/Cart";
 
 
 
@@ -119,7 +120,12 @@ export const router = createBrowserRouter([{
                         element: <PromotionMalg />,
                         loader: loaderAdvertisement,
                        
-                    },   
+                    }, 
+                    {
+                        path: "/cart",
+                        element: <Cart />
+                    },
+  
                 ]
 }
 ]

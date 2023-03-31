@@ -9,9 +9,10 @@
 }
 .footer{
     background-image: url(https://static.vecteezy.com/system/resources/previews/006/413/042/non_2x/gradient-abstract-background-you-can-use-this-background-for-your-content-like-as-video-game-qoute-promotion-blogging-template-presentation-education-sports-card-banner-website-and-anymore-free-vector.jpg);
-    display: flex;
+   
     justify-content: space-around;
-    height: 2.5rem;
+    height:auto;
+    width:100% ;
     
 }
 
@@ -21,7 +22,6 @@
     background-color: rgb(201, 168, 233);
     
 }
-
 
 @media (max-width: 420px) {
     .socialmedia {

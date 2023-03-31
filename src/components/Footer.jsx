@@ -12,7 +12,7 @@ import twitter from '../assets/twitter.png'
 function Footer ()  {
 
   return (
-    <Nav className='footer fixed-bottom'
+    <Nav className='footer '
      
     >
       <Nav.Item >

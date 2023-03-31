@@ -21,7 +21,7 @@ function DashboardAdmin() {
   const data = productsData.filter(
     (product) =>
       product.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      product.price.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      
       product.location.toLowerCase().includes(searchQuery.toLowerCase())
 
   );

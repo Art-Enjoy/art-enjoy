@@ -105,9 +105,9 @@ h4 {
 
     }
 
-    #img-ad {
+    #img-add {
         width: 17.875rem;
-        height: 15rem;
+        height: 20rem;
         object-fit: cover;
         border-radius: 2vh;
         margin-top: 4vh;
@@ -116,7 +116,7 @@ h4 {
         position: absolute;
     }
 
-    .title-ad {
+    .title-add {
         position: absolute;
         margin-top: 36vh;
         border-radius: 1vh;
@@ -129,7 +129,7 @@ h4 {
 
     }
 
-    .ad-title {
+    .add-title {
         position: absolute;
         margin-top: 42vh;
         margin-left: 0vh;
@@ -138,20 +138,13 @@ h4 {
 
     .price {
         position: absolute;
-        margin-top: 7vh;
+        margin-top: 17vh;
     }
 
     .units {
         position: absolute;
-        margin-top: 56vh;
+        margin-top: 120vh;
         margin-left: 0vh;
-    }
-
-    .user {
-        position: absolute;
-        margin-top: 63vh;
-        margin-left: 0vh;
-
     }
 
     .description {
@@ -161,6 +154,9 @@ h4 {
         text-align: justify;
         margin-right: 4vh;
 
+    }
+    .btn-buy {
+       margin-top: 908px;
     }
 
 }
@@ -183,9 +179,9 @@ h4 {
 
     }
 
-    #img-ad {
-        width: 16.875rem;
-        height: 15rem;
+    #img-add {
+        width: 17.875rem;
+        height: 17rem;
         object-fit: cover;
         border-radius: 2vh;
         margin-top: 4vh;
@@ -194,7 +190,7 @@ h4 {
         position: absolute;
     }
 
-    .title-ad {
+    .title-add {
         position: absolute;
         margin-top: 36vh;
         border-radius: 1vh;
@@ -207,7 +203,7 @@ h4 {
 
     }
 
-    .ad-title {
+    .add-title {
         position: absolute;
         margin-top: 42vh;
         margin-left: 0vh;
@@ -216,12 +212,12 @@ h4 {
 
     .price {
         position: absolute;
-        margin-top: 7vh;
+        margin-top: 17vh;
     }
 
     .units {
         position: absolute;
-        margin-top: 56vh;
+        margin-top: 120vh;
         margin-left: 0vh;
     }
 
@@ -235,6 +231,9 @@ h4 {
         margin-bottom: 2vh;
 
     }
+    .btn-buy {
+        margin-top: 908px;
+     }
 
 }
 
@@ -257,9 +256,9 @@ h4 {
 
     }
 
-    #img-ad {
-        width: 16.25rem;
-        height: 15rem;
+    #img-add {
+        width: 17.875rem;
+        height: 17rem;
         object-fit: cover;
         border-radius: 2vh;
         margin-top: 4vh;
@@ -268,7 +267,8 @@ h4 {
         position: absolute;
     }
 
-    .title-ad {
+
+    .title-add {
         position: absolute;
         margin-top: 36vh;
         border-radius: 1vh;
@@ -281,7 +281,7 @@ h4 {
 
     }
 
-    .ad-title {
+    .add-title {
         position: absolute;
         margin-top: 42vh;
         margin-left: 0vh;
@@ -290,21 +290,15 @@ h4 {
 
     .price {
         position: absolute;
-        margin-top: 7vh;
+        margin-top: 17vh;
     }
 
     .units {
         position: absolute;
-        margin-top: 56vh;
+        margin-top: 120vh;
         margin-left: 0vh;
     }
 
-    .user {
-        position: absolute;
-        margin-top: 63vh;
-        margin-left: 0vh;
-
-    }
 
     .description {
         position: absolute;
@@ -315,5 +309,8 @@ h4 {
 
 
     }
+    .btn-buy {
+        margin-top: 908px;
+     }
 
 }

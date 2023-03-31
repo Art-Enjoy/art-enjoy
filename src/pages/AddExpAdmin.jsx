@@ -43,6 +43,9 @@ const AddExpAdmin = () => {
       setImg(reader.result)
     };
   };
+  
+  const allFieldsFilled = title && price && description && units && location && img;
+
   const handleSubmit = (event) => {
     event.preventDefault();
     let newProduct = { title, description, price, units, location, img };
@@ -51,7 +54,13 @@ const AddExpAdmin = () => {
   };
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+  const handleShow = () => {
+    if (allFieldsFilled) {
+      setShow(true);
+    } else {
+      alert('Por favor rellene todos los campos');
+    }
+  };
 
 
   return (
@@ -91,12 +100,11 @@ const AddExpAdmin = () => {
 
         <button type="submit" className="btn btn-primary" id="btn" onClick={handleShow}>Añadir</button>
 
-        <Modal className="modal" show={show} onHide={handleClose}>
+        <Modal className="modal" show={show && allFieldsFilled} onHide={handleClose}>
           <Modal.Header closeButton>
             <Modal.Title>Todo correcto!</Modal.Title>
           </Modal.Header>
           <Modal.Body className="modal-body">Su experiencia ha sido añadida</Modal.Body>
-        
         </Modal>
       </form>
 
@@ -104,3 +112,4 @@ const AddExpAdmin = () => {
   );
 };
 export default AddExpAdmin;
+
