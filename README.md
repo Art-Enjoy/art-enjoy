@@ -52,6 +52,7 @@ Requirements, Installation and Getting started:
 CONTENT:
 
 USER PAGES:
+
 -First page of the user, landing page that shows what you will find on our platform and links to our experiences, promotional experiences and locations of our experiences.
 
 Files are properly organized and separated with controllers and service architecture.
@@ -70,6 +71,7 @@ Each experience with title, image, location, description, price and purchase but
 
 
 ADMIN PAGES:
+
 -First admin page, admin login.
 
 -Second page of the admin, landing page that shows what our page contains and links to open, edit and delete our experiences.
@@ -101,6 +103,7 @@ Search Bar: You can search by location or experience title.
 TESTING:
 
 COMPONET TESTING 
+
 •	We need to install:
 
 •	npm install --save-dev vitest
