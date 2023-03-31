@@ -84,6 +84,7 @@ Each experience with title, image, location, description, price.
 
 
 
+
 We use Bootstrap to make the web responsive.
 
 User experience.
@@ -100,7 +101,9 @@ Search Bar: You can search by location or experience title.
 
 
 
+
 TESTING:
+
 
 COMPONET TESTING 
 
