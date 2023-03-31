@@ -13,7 +13,7 @@ export const productHandler = {
         let imgExtension = imgStringDataSplit[0].split(';')[0].split(':')[1];
 
         let newProductBase64RequestModel = {
-            "productData": {
+            "productEntity": {
                 "title": newProductBaseModel.title,
                 "location":newProductBaseModel.location,
                 "price": newProductBaseModel.price,
@@ -40,7 +40,7 @@ export const productHandler = {
     async addProductImgFile(newProductBaseModel) {
 
         let newProductFileRequestModel = {
-            "productData": {
+            "productEntity": {
                 "title": newProductBaseModel.title,
                 "location":newProductBaseModel.location,
                 "price": newProductBaseModel.price,

@@ -11,12 +11,13 @@ const apiClient = axios.create({
 
 export const productService = {
     async getProductsBase64Array() {
-        let response = await apiClient.get("/Product/GetAllBase64List");
+        let response = await apiClient.get("/Product/GetFullProductsInfo");
         if (!response == 200) {
             alert("Upsi, hubo un error al traer los productos.")
         };
         let allProducts = response.data;
         return allProducts;
+        
     },
 
     async submitProductImgBase64(newProductBase64RequestModel) {

@@ -102,7 +102,7 @@ const [imgFile, setImgFile] = useState(null);
         </div>
         <div className="mb-3">
           <label htmlFor="price" className="form-label">Precio</label>
-          <input name="price" type="text"
+          <input name="price" type="number"
             placeholder="Ingrese precio" className="form-control" onChange={handlePriceChange} required />
         </div>
         <div className="mb-3">
@@ -122,8 +122,8 @@ const [imgFile, setImgFile] = useState(null);
             placeholder="Ingrese ubicación" className="form-control" onChange={handleLocationChange} required />
         </div>
         <div className="mb-3">
-          <label htmlFor="img" className="form-label">Imagen</label>
-          <input name="img" type="file" className="form-control" onChange={handleImgBase64Change} />
+          <label htmlFor="file" className="form-label">Imagen</label>
+          <input name="File" type="file" className="form-control" onChange={handleImgBase64Change} />
         </div>
 
         <button type="submit" className="btn btn-primary" id="btn" onClick={handleSubmit}>Añadir</button>
