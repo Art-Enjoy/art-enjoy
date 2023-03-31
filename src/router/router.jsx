@@ -1,4 +1,3 @@
-
 import { createBrowserRouter } from "react-router-dom";
 import ExpDetail from "../pages/ExpDetail"
 import ExpDetailUser from "../pages/ExpDetailUser"
@@ -140,4 +139,5 @@ async function loaderAdvertisement() {
     const products = await productHandler.loadProducts()
     return { products };
 };
+
 

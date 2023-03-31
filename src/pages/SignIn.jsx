@@ -1,5 +1,6 @@
 import React from 'react';
-import { Col, Button, Row, Container, Card, Form } from 'react-bootstrap';
+import {  Button,  Container, Form } from 'react-bootstrap';
+
 
 export default function SignIn() {
   return (
@@ -7,8 +8,9 @@ export default function SignIn() {
       <Container>
      
                     <Form>
+                    <h3>Regístrate!</h3>
                       <Form.Group className="mb-3" controlId="Name">
-                        <Form.Label className="text-center">Nonmbre</Form.Label>
+                        <Form.Label className="text-center">Nombre</Form.Label>
                         <Form.Control type="text" placeholder="Ingrese Nombre" />
                       </Form.Group>
 
@@ -38,7 +40,7 @@ export default function SignIn() {
                         controlId="formBasicCheckbox"
                       ></Form.Group>
                       <div className="d-grid">
-                        <Button id="btn" type="submit">
+                        <Button id="btn" size="sm" type="submit">
                           Registrar
                         </Button>
                       </div>

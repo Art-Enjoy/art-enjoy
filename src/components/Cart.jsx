@@ -2,6 +2,7 @@ import { useState,useEffect } from "react";
 import "./Cart.css"
 import Button from "react-bootstrap/Button";
 import Modal from 'react-bootstrap/Modal';
+import React from "react";
 
 const Cart = () => {
   const [cartProducts, setCartProducts,] = useState(JSON.parse(localStorage.getItem("cartProducts")) || []);
@@ -13,12 +14,13 @@ const Cart = () => {
     localStorage.removeItem("cartProducts");
     setCartProducts([]);
   }
+ ;
   const handleRemove = (id) => {
     const arr =cartProducts.filter((product) => product.id !== id);
     setCartProducts(arr);
+    localStorage.setItem("cartProducts", JSON.stringify(arr));
     handlePrice();
-  };
-
+};
   const handleChange = (product, d) => {
     const ind = cartProducts.indexOf(product);
     const arr = [...cartProducts];
@@ -38,27 +40,6 @@ const Cart = () => {
   useEffect(() => {
     handlePrice();
   }, [cartProducts]);
-  
-  // const handleChange = (product, d) => {
-  //   const ind = cartProducts.indexOf(product);
-  //   const arr = [...cartProducts];
-  //   arr[ind] = { ...arr[ind], units: parseInt(arr[ind].units) + parseInt(d) };
-    
-  //   if (arr[ind].units <= 0) arr[ind].units = 1;
-  //   setCartProducts(arr);
-  //   handlePrice();
-  // };
- 
-
-  // const handlePrice = () => {
-  //   let total = 0;
-  //  cartProducts.map((product) => (total += parseInt(product.price ) ));
-  //   setPrice(total);
-     
-  //   };
-  //   useEffect(() => {
-  //   handlePrice();
-  //   });
 
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
@@ -71,7 +52,7 @@ const Cart = () => {
       
           <div className= "img-cart" >
             <img src={product.img} alt="" />
-            <h1>{product.title}</h1>  
+            <h6 className="title-cart">{product.title}</h6>  
           </div>
           <div>
           <button onClick={() => handleChange(product, 1)}>+</button>
@@ -91,13 +72,13 @@ const Cart = () => {
         <span>Cantidad total</span>
         <span>{price}€</span>
       </div>
-      <button type="submit" id="btn" onClick={handleShow}>Comprar</button>
+      <Button type="submit" id="btn" onClick={handleShow}>Comprar</Button>
             
             <Modal className="modal" show={show} onHide={handleClose}>
               <Modal.Header closeButton>
-                <Modal.Title>Todo correcto!</Modal.Title>
+                <Modal.Title>Hemos recibido su pedido!</Modal.Title>
               </Modal.Header>
-              <Modal.Body className="modal-body">Su experiencia ha sido añadida</Modal.Body>
+              <Modal.Body className="modal-body">Revise la bandeja de entrada de su correo electrónico. Le hemos enviado un email con el resumen de su pedido y debe seguir las intrucciones para finalizarlo.</Modal.Body>
 
             </Modal>
 

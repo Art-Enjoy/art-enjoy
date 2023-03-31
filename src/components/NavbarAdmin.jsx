@@ -8,29 +8,24 @@ import Navbar from 'react-bootstrap/Navbar';
 
 
 function NavbarAdmin() {
-return (
+  return (
 
-    <Navbar bg="light"  expand="lg" className='navigation'>
-        <Container className='menu'>
+    <Navbar bg="light" expand="lg" className='navigation'>
+      <Container className='menu'>
         <Navbar.Brand to="/">
-          <NavLink to="/"className="navbar-home"><img src={Logo} alt="Art-Enjoy"className='Logo'/></NavLink>
-        </Navbar.Brand>  
+          <NavLink to="/" className="navbar-home"><img src={Logo} alt="Art-Enjoy" className='Logo' /></NavLink>
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        <Navbar.Collapse id="responsive-navbar-nav">  
+        <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="">
-            <NavLink  to='/dashboardAdmin' className='text-navbar' href="#home">Panel de experiencias</NavLink>
-                
-            <div className='text-navbar'>Bienvenid@</div>
-                
+            <NavLink to='/dashboardAdmin' className='text-navbar' href="#home">Panel de experiencias</NavLink>
             <NavLink className='text-navbar' to='/addexpadmin' href="#form">Añadir actividad </NavLink>
-            
-                
           </Nav>
-          </Navbar.Collapse>
-        </Container>
-      </Navbar>
-    
-    
-);
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
+
+
+  );
 }
 export default NavbarAdmin;

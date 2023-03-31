@@ -10,45 +10,45 @@ form{
     color:rgb(0, 0, 0)
 }
 
-.form-control{
-background-color: rgb(205, 244, 158);
-border-radius: 1.25rem;
-  border: 0;
-  width: 50vw;
-  color: rgb(10, 10, 10);
-  padding: .3125rem;
-  position: sticky;
-  top: .3125rem;
-  margin-left: .5rem;
-}
-
-
-#btn{
+.form-control {
+    background-color: rgb(205, 244, 158);
+    border-radius: 1.25rem;
+    border: 0;
+    width: 50vw;
+    color: rgb(10, 10, 10);
+    padding: .3125rem;
+    position: sticky;
+    margin-left: .5rem;
+  }
+  
+  #btn {
     background-color: #90f680;
     color: black;
     border-style: none;
     width: 200px;
     margin-left: 15.625rem;
-    
-}
-
-#btn:hover{
-color: white;
-background-color: #af80f6;
-box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
-}
-.container-form{
+  }
+  
+  #btn:hover {
+    color: white;
+    background-color: #af80f6;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  .container-form {
     display: flex;
     justify-content: center;
-    
-       
-}
-
+  }
 #input-description{
-height: 20vh;
+    height: 20vh;
+  
+    resize: vertical;
+    white-space: pre-wrap;
 }
+  
+
 .modal{
-    color: rgb(63, 142, 119);
+    color: rgb(8, 8, 8);
     
 }
 .modal-body{

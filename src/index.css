@@ -14,13 +14,22 @@
   color: antiquewhite;
 
 }
+#btn {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 200px; 
+  margin-bottom: 10px;
+}
 
-@media (max-width: 414px) {
+ @media (max-width: 374px) {
   #btn {
-    margin-left: 20px;
+    margin-left: -40px;
+    
+
 
   }
-}
+} 
 
 
 

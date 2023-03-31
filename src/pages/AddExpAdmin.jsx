@@ -1,7 +1,6 @@
 import "./AddExpAdmin.css"
 import Modal from 'react-bootstrap/Modal';
 import { useState } from 'react';
-import { productHandler } from '../handler/productHandler';
 
 
 
@@ -43,24 +42,41 @@ const AddExpAdmin = () => {
       setImg(reader.result)
     };
   };
-  
+  const [products, setProducts] = useState([]);
+  const [productsData, setProductsData] = useState(products);
+
   const allFieldsFilled = title && price && description && units && location && img;
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    let newProduct = { title, description, price, units, location, img };
-    productHandler.addProduct(newProduct);
-    event.target.reset()
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const product = { title, description, img, price, location, units };
+    const res = await fetch("http://localhost:3000/Products", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(product),
+    });
+    if (res.ok) {
+      const newProduct = await res.json();
+      setProducts([...products, newProduct]); // actualiza el estado products con el nuevo producto
+      setShow(false);
+      e.target.reset()
+    }
   };
+
+
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => {
     if (allFieldsFilled) {
+      handleSubmit();
       setShow(true);
     } else {
       alert('Por favor rellene todos los campos');
     }
   };
+
 
 
   return (
@@ -80,8 +96,11 @@ const AddExpAdmin = () => {
         <div className="mb-3">
           <label className="form-label" htmlFor="description">Descripción</label>
           <input name="description" type="text"
-            placeholder="Ingrese descripción" className="form-control" id="input-description" onChange={handleDescriptionChange} required />
+            placeholder="Ingrese descripción" className="form-control"
+            id="input-description" onChange={handleDescriptionChange}
+            required wrap="soft" />
         </div>
+
 
         <div className="mb-3">
           <label htmlFor="units" className="form-label">Unidades</label>
@@ -93,12 +112,15 @@ const AddExpAdmin = () => {
           <input name="location" type="text"
             placeholder="Ingrese ubicación" className="form-control" onChange={handleLocationChange} required />
         </div>
+
         <div className="mb-3">
           <label htmlFor="img" className="form-label">Imagen</label>
           <input name="img" type="file" className="form-control" onChange={handleImgChange} required />
         </div>
 
-        <button type="submit" className="btn btn-primary" id="btn" onClick={handleShow}>Añadir</button>
+
+        <button className="btn btn-primary" id="btn" onClick={handleShow}>Añadir</button>
+
 
         <Modal className="modal" show={show && allFieldsFilled} onHide={handleClose}>
           <Modal.Header closeButton>

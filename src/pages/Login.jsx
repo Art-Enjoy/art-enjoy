@@ -1,16 +1,14 @@
 import React from 'react'
-/* import { Container } from 'react-bootstrap' */
-
-
+import { Container } from 'react-bootstrap' 
 import { Component } from 'react'
-import { Container } from 'react-bootstrap'
+
 export default class Login extends Component {
   render() {
     return (
       <>
       <Container>
       <form>
-        <h3>Registro</h3>
+        <h3>Iniciar Sesión</h3>
         <div className="mb-3">
           <label>Email </label>
           <input

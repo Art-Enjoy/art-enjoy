@@ -1,9 +1,7 @@
 import React from 'react'
-/* import { Container } from 'react-bootstrap' */
-
-
+import { Container } from 'react-bootstrap' 
 import { Component } from 'react'
-import { Container } from 'react-bootstrap'
+
 export default class LoginAdmin extends Component {
   render() {
     return (
